@@ -1,40 +1,211 @@
-[27Aug2024 17:48:17.069] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[27Aug2024 17:48:17.075] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Ubuntu; OS Linux arch aarch64 version 6.5.0-1024-oracle
-[27Aug2024 17:48:17.218] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
-[27Aug2024 17:48:17.279] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/ubuntu/server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
-[27Aug2024 17:48:17.523] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.0/fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
-[27Aug2024 17:48:17.525] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.0/javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[27Aug2024 17:48:17.527] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.0/lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[27Aug2024 17:48:17.528] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.0/mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
-[27Aug2024 17:48:17.659] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[27Aug2024 17:48:19.015] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
-[27Aug2024 17:48:25.354] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.0, for MC 1.20.1 with MCP 20230612.114412
-[27Aug2024 17:48:25.357] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.0 Initialized
-[27Aug2024 17:48:25.986] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[27Aug2024 17:48:26.325] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 47.3.0 Target: null
-[27Aug2024 17:48:26.951] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[27Aug2024 17:48:27.703] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/ubuntu/server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/assets/.mcassetsroot' uses unexpected schema
-[27Aug2024 17:48:27.704] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/ubuntu/server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/data/.mcassetsroot' uses unexpected schema
-[27Aug2024 17:48:29.549] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[27Aug2024 17:48:29.720] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[27Aug2024 17:48:30.273] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
-[27Aug2024 17:48:30.274] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[27Aug2024 17:48:30.275] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[27Aug2024 17:48:30.275] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[27Aug2024 17:48:30.413] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[27Aug2024 17:48:30.445] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
-[27Aug2024 17:48:30.606] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[27Aug2024 17:48:33.452] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[27Aug2024 17:48:36.646] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.651] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.654] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.656] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.657] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.658] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.659] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:36.954] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Aug2024 17:48:37.454] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 42%
-[27Aug2024 17:48:37.983] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 96%
-[27Aug2024 17:48:38.008] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4555 ms
-[27Aug2024 17:48:38.010] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (7.450s)! For help, type "help"
-[27Aug2024 17:48:38.039] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[27Aug2024 21:11:06.176] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[27Aug2024 21:11:06.181] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.12 by Ubuntu; OS Linux arch aarch64 version 6.5.0-1027-oracle
+[27Aug2024 21:11:06.298] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file /home/ubuntu/server/config/fml.toml is not correct. Correcting
+[27Aug2024 21:11:06.300] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from true to null
+[27Aug2024 21:11:07.320] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[27Aug2024 21:11:07.330] [main/INFO] [mixin-transmog/]: Mixin Transmogrifier is definitely up to no good...
+[27Aug2024 21:11:07.357] [main/INFO] [mixin-transmog/]: crimes against java were committed
+[27Aug2024 21:11:07.380] [main/INFO] [mixin-transmog/]: Original mixin transformation service successfully crobbed by mixin-transmogrifier!
+[27Aug2024 21:11:07.435] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/ubuntu/server/mods/Connector-1.0.0-beta.45+1.20.1.jar%23189%23193!/ Service=ModLauncher Env=SERVER
+[27Aug2024 21:11:07.456] [main/INFO] [Mods Optimizer/]: [Mods Optimizer] ♻ Init ...
+[27Aug2024 21:11:07.457] [main/INFO] [Mods Optimizer/]: Game Directory: /home/ubuntu/server
+[27Aug2024 21:11:07.457] [main/INFO] [Mods Optimizer/]: Mods Directory: /home/ubuntu/server/mods
+[27Aug2024 21:11:07.458] [main/INFO] [Mods Optimizer/]: Game Environment: SERVER
+[27Aug2024 21:11:07.459] [main/INFO] [Mods Optimizer/]: Loading Mods Database Config File from /home/ubuntu/server/config/mods_optimizer/config.toml
+[27Aug2024 21:11:07.537] [main/INFO] [Mods Optimizer/]: ♻ init with game dir /home/ubuntu/server and mods dir /home/ubuntu/server/mods for target SERVER in 78 ms.
+[27Aug2024 21:11:07.539] [main/INFO] [Mods Optimizer/]: ♻ Parsing Mods data ...
+[27Aug2024 21:11:07.541] [main/INFO] [Mods Optimizer/]: [Mod Data] parsing ~104 mods in /home/ubuntu/server/mods with file extension .jar ...
+[27Aug2024 21:11:07.601] [main/ERROR] [Mods Optimizer/]: TOML file META-INF/mods.toml not found in java.util.jar.JarFile@678040b3
+[27Aug2024 21:11:07.602] [main/WARN] [Mods Optimizer/]: ⚠ Found no META-INF/mods.toml file for /home/ubuntu/server/mods/kotlinforforge-4.11.0-all.jar!
+[27Aug2024 21:11:07.640] [main/INFO] [Mods Optimizer/]: [Mod Data] Overwrite mod environment for adaptive_performance_tweaks_core from DEFAULT to SERVER
+[27Aug2024 21:11:07.678] [main/ERROR] [Mods Optimizer/]: Error reading TOML file META-INF/mods.toml from java.util.jar.JarFile@1fd386c3: java.lang.IllegalStateException: Invalid table array definition on line 42: [[dependencies.'do_a_barrel_roll']]
+[27Aug2024 21:11:07.679] [main/WARN] [Mods Optimizer/]: ⚠ Found no META-INF/mods.toml file for /home/ubuntu/server/mods/do_a_barrel_roll-forge-3.5.6+1.20.1.jar!
+[27Aug2024 21:11:07.682] [main/WARN] [Mods Optimizer/]: Was unable to parse timestamp 2024-02-27T15:58:47.037543383:
+[27Aug2024 21:11:07.721] [main/ERROR] [Mods Optimizer/]: TOML file META-INF/mods.toml not found in java.util.jar.JarFile@31611954
+[27Aug2024 21:11:07.721] [main/WARN] [Mods Optimizer/]: ⚠ Found no META-INF/mods.toml file for /home/ubuntu/server/mods/Connector-1.0.0-beta.45+1.20.1.jar!
+[27Aug2024 21:11:07.722] [main/WARN] [Mods Optimizer/]: Was unable to parse timestamp 2024-08-07T19:18:22.678137723:
+[27Aug2024 21:11:07.722] [main/ERROR] [Mods Optimizer/]: Json file fabric.mod.json not found in java.util.jar.JarFile@31611954
+[27Aug2024 21:11:07.723] [main/WARN] [Mods Optimizer/]: ⚠ Found no id tag inside the fabric.mod.json file /home/ubuntu/server/mods/Connector-1.0.0-beta.45+1.20.1.jar!
+[27Aug2024 21:11:07.723] [main/WARN] [Mods Optimizer/]: ⚠ Found no name tag inside the fabric.mod.json file /home/ubuntu/server/mods/Connector-1.0.0-beta.45+1.20.1.jar!
+[27Aug2024 21:11:07.723] [main/WARN] [Mods Optimizer/]: ⚠ Found no version tag inside the fabric.mod.json file /home/ubuntu/server/mods/Connector-1.0.0-beta.45+1.20.1.jar!
+[27Aug2024 21:11:07.724] [main/WARN] [Mods Optimizer/]: Was unable to parse timestamp 2024-08-07T19:18:22.678137723:
+[27Aug2024 21:11:07.735] [main/INFO] [Mods Optimizer/]: [Mod Data] Overwrite mod environment for adaptive_performance_tweaks_spawn from DEFAULT to SERVER
+[27Aug2024 21:11:07.736] [main/WARN] [Mods Optimizer/]: Was unable to parse timestamp 2024-07-12T15:32:29.538602783:
+[27Aug2024 21:11:07.770] [main/INFO] [Mods Optimizer/]: [Mod Data] Found 1 library mods in 89 mods.
+[27Aug2024 21:11:07.770] [main/INFO] [Mods Optimizer/]: [Mod Data] Found 2 data pack mods in 89 mods.
+[27Aug2024 21:11:07.771] [main/INFO] [Mods Optimizer/]: [Mod Data] Found 4 server mods in 89 mods.
+[27Aug2024 21:11:07.771] [main/INFO] [Mods Optimizer/]: [Mod Data] Found 1 service mods in 89 mods.
+[27Aug2024 21:11:07.771] [main/INFO] [Mods Optimizer/]: [Mod Data] Found 81 default mods in 89 mods.
+[27Aug2024 21:11:07.772] [main/INFO] [Mods Optimizer/]: -------------------------------------------------------------------------------------------------------------------
+[27Aug2024 21:11:07.772] [main/INFO] [Mods Optimizer/]: | ID                                 | VERSION                | TYPE     | ENVIRONMENT       | TIMESTAMP           |
+[27Aug2024 21:11:07.772] [main/INFO] [Mods Optimizer/]: -------------------------------------------------------------------------------------------------------------------
+[27Aug2024 21:11:07.773] [main/INFO] [Mods Optimizer/]: | adaptive_performance_tweaks_core   | 11.1.0                 | FORGE    | SERVER            | 2024-07-14 13:42:57 |
+[27Aug2024 21:11:07.774] [main/INFO] [Mods Optimizer/]: | org.sinytra.connector              | 1.0.0-beta.45+1.20.1   | MIXED    | SERVICE           | 2024-08-27 20:56:43 |
+[27Aug2024 21:11:07.775] [main/INFO] [Mods Optimizer/]: | kiwi                               | 11.8.20+forge          | FORGE    | UNKNOWN           | 2024-08-07 12:29:46 |
+[27Aug2024 21:11:07.775] [main/INFO] [Mods Optimizer/]: | rhino                              | 2001.2.3-build.6       | FORGE    | UNKNOWN           | 2024-08-23 12:53:08 |
+[27Aug2024 21:11:07.776] [main/INFO] [Mods Optimizer/]: | kubejs                             | 2001.6.5-build.14      | FORGE    | DEFAULT           | 2024-06-21 18:29:01 |
+[27Aug2024 21:11:07.776] [main/INFO] [Mods Optimizer/]: | adaptive_performance_tweaks_spawn  | 11.1.0                 | FORGE    | SERVER            | 2024-07-14 13:42:59 |
+[27Aug2024 21:11:07.776] [main/INFO] [Mods Optimizer/]: | createbigcannons                   | 5.5.1+mc.1.20.1-forge  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.777] [main/INFO] [Mods Optimizer/]: | fastload                           | 3.4.0                  | FORGE    | DEFAULT           | 2023-08-15 12:03:02 |
+[27Aug2024 21:11:07.777] [main/INFO] [Mods Optimizer/]: | ae2wtlib                           | 15.2.3-forge           | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.778] [main/INFO] [Mods Optimizer/]: | netherportalfix                    | 13.0.1                 | FORGE    | DEFAULT           | 2023-12-08 13:21:45 |
+[27Aug2024 21:11:07.778] [main/INFO] [Mods Optimizer/]: | advancedperipherals                | 0.0.0                  | FORGE    | DEFAULT           | 2024-06-11 10:41:40 |
+[27Aug2024 21:11:07.779] [main/INFO] [Mods Optimizer/]: | createdeco                         | 2.0.2-1.20.1-forge     | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.779] [main/INFO] [Mods Optimizer/]: | cccbridge                          | 1.6.3-forge            | FORGE    | DEFAULT           | 2023-11-13 17:40:29 |
+[27Aug2024 21:11:07.780] [main/INFO] [Mods Optimizer/]: | copycats                           | 2.1.2+mc.1.20.1-forge  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.780] [main/INFO] [Mods Optimizer/]: | createappliedkinetics              | 1.3.2-1.20.1           | FORGE    | DEFAULT           | 2024-02-03 18:04:23 |
+[27Aug2024 21:11:07.780] [main/INFO] [Mods Optimizer/]: | jei                                | 15.12.3-55             | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.781] [main/INFO] [Mods Optimizer/]: | ae2                                | 15.2.13                | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.781] [main/INFO] [Mods Optimizer/]: | crystal_clear                      | 0.0.0                  | FORGE    | DEFAULT           | 2024-08-27 20:56:43 |
+[27Aug2024 21:11:07.782] [main/INFO] [Mods Optimizer/]: | create_copper_and_zinc             | 1.4.0                  | FORGE    | UNKNOWN           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.782] [main/INFO] [Mods Optimizer/]: | stoneworks                         | 8.0.0                  | FORGE    | DEFAULT           | 2023-06-27 12:13:19 |
+[27Aug2024 21:11:07.783] [main/INFO] [Mods Optimizer/]: | create_jetpack                     | 4.2.1                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.783] [main/INFO] [Mods Optimizer/]: | immersive_weathering               | 1.20.1-2.0.1           | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.784] [main/INFO] [Mods Optimizer/]: | create                             | 5.1.15                 | FORGE    | DEFAULT           | 2023-11-02 15:38:09 |
+[27Aug2024 21:11:07.784] [main/INFO] [Mods Optimizer/]: | clumps                             | 12.0.0-4               | FORGE    | UNKNOWN           | 2024-04-21 05:03:55 |
+[27Aug2024 21:11:07.784] [main/INFO] [Mods Optimizer/]: | xaeroworldmap                      | 1.38.8                 | FORGE    | DEFAULT           | 2024-05-31 13:16:52 |
+[27Aug2024 21:11:07.785] [main/INFO] [Mods Optimizer/]: | naturescompass                     | 1.20.1-1.11.2-forge    | FORGE    | DEFAULT           | 2023-08-19 09:54:27 |
+[27Aug2024 21:11:07.785] [main/INFO] [Mods Optimizer/]: | create_central_kitchen             | 1.3.12                 | FORGE    | DEFAULT           | 2024-04-03 09:44:57 |
+[27Aug2024 21:11:07.786] [main/INFO] [Mods Optimizer/]: | thedarkcolour.kotlinforforge       | 0.0.0                  | FORGE    | LIBRARY           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.786] [main/INFO] [Mods Optimizer/]: | peripherals                        | 1.13.0                 | FORGE    | DEFAULT           | 2024-04-16 14:59:55 |
+[27Aug2024 21:11:07.787] [main/INFO] [Mods Optimizer/]: | createcasing                       | 1.20.1-1.6.1-fix1      | FORGE    | DEFAULT           | 2024-07-24 19:45:10 |
+[27Aug2024 21:11:07.787] [main/INFO] [Mods Optimizer/]: | mods_optimizer                     | 2.0.0                  | FORGE    | DEFAULT           | 2024-02-25 20:13:52 |
+[27Aug2024 21:11:07.787] [main/INFO] [Mods Optimizer/]: | snowundertrees                     | 1.4.4                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.788] [main/INFO] [Mods Optimizer/]: | vs_clockwork                       | 1.20.1-0.1.16-forge-b3b22e39fe | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.788] [main/INFO] [Mods Optimizer/]: | createdieselgenerators             | 1.20.1-1.2i            | FORGE    | DEFAULT           | 2024-06-05 18:06:03 |
+[27Aug2024 21:11:07.789] [main/INFO] [Mods Optimizer/]: | starlight                          | 1.1.2+forge.1cda73c    | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.789] [main/INFO] [Mods Optimizer/]: | balm                               | 7.3.9                  | FORGE    | DEFAULT           | 2024-08-19 19:48:03 |
+[27Aug2024 21:11:07.790] [main/INFO] [Mods Optimizer/]: | railways                           | 1.6.4+forge-mc1.20.1   | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.790] [main/INFO] [Mods Optimizer/]: | snowrealmagic                      | 10.4.4                 | FORGE    | UNKNOWN           | 2024-07-17 05:15:59 |
+[27Aug2024 21:11:07.790] [main/INFO] [Mods Optimizer/]: | molten_metals                      | 1.20.1-0.1.4           | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.791] [main/INFO] [Mods Optimizer/]: | memoryleakfix                      | 1.1.5                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.791] [main/INFO] [Mods Optimizer/]: | spelunkery                         | 1.20.1-0.3.10          | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.792] [main/INFO] [Mods Optimizer/]: | cloth_config                       | 11.1.118               | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.792] [main/INFO] [Mods Optimizer/]: | forge                              | 3.5.6+1.20.1           | FORGE    | UNKNOWN           | 2024-05-08 10:33:38 |
+[27Aug2024 21:11:07.793] [main/INFO] [Mods Optimizer/]: | fabric_api                         | 0.0.0                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.793] [main/INFO] [Mods Optimizer/]: | biome_replacer                     | 1.2.0                  | FORGE    | SERVER            | 2023-10-30 06:21:44 |
+[27Aug2024 21:11:07.793] [main/INFO] [Mods Optimizer/]: | embeddium                          | 0.3.30+mc1.20.1        | FORGE    | UNKNOWN           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.794] [main/INFO] [Mods Optimizer/]: | create_oxidized                    | 0.1.1                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.794] [main/INFO] [Mods Optimizer/]: | farmersdelight                     | 1.20.1-1.2.4           | FORGE    | DEFAULT           | 2024-01-21 22:49:55 |
+[27Aug2024 21:11:07.795] [main/INFO] [Mods Optimizer/]: | creategoggles                      | 5.5.16                 | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.795] [main/INFO] [Mods Optimizer/]: | kjscc                              | 1.0.1-beta             | FORGE    | DEFAULT           | 2024-05-01 08:11:17 |
+[27Aug2024 21:11:07.796] [main/INFO] [Mods Optimizer/]: | moonlight                          | 2.12.16                | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.796] [main/INFO] [Mods Optimizer/]: | netherportalspread                 | 8.3.0                  | MIXED    | UNKNOWN           | 2024-07-27 22:17:02 |
+[27Aug2024 21:11:07.797] [main/INFO] [Mods Optimizer/]: | jade                               | 11.10.1+forge          | FORGE    | DEFAULT           | 2024-08-18 22:25:09 |
+[27Aug2024 21:11:07.797] [main/INFO] [Mods Optimizer/]: | chunky                             | 1.3.146                | FORGE    | DEFAULT           | 2024-08-27 20:56:43 |
+[27Aug2024 21:11:07.797] [main/INFO] [Mods Optimizer/]: | creativecore                       | 2.11.37                | FORGE    | DEFAULT           | 2024-08-21 14:44:54 |
+[27Aug2024 21:11:07.798] [main/INFO] [Mods Optimizer/]: | amplified_nether                   | 1.2.5                  | MIXED    | DATA_PACK         | 2024-08-27 20:56:43 |
+[27Aug2024 21:11:07.798] [main/INFO] [Mods Optimizer/]: | resourcefulconfig                  | 2.1.2                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.799] [main/INFO] [Mods Optimizer/]: | e4mc_minecraft                     | 5.1.0                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.799] [main/INFO] [Mods Optimizer/]: | merequester                        | 1.20.1-1.1.4           | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.799] [main/INFO] [Mods Optimizer/]: | domum_ornamentum                   | 1.20.1-1.0.199-BETA    | FORGE    | UNKNOWN           | 2024-08-12 16:31:09 |
+[27Aug2024 21:11:07.800] [main/INFO] [Mods Optimizer/]: | create_interactive                 | 1.0.2-beta.2           | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.800] [main/INFO] [Mods Optimizer/]: | curios                             | 5.9.1+1.20.1           | FORGE    | DEFAULT           | 2024-05-23 18:59:32 |
+[27Aug2024 21:11:07.801] [main/INFO] [Mods Optimizer/]: | blockui                            | 1.20.1-1.0.186-beta    | FORGE    | DEFAULT           | 2024-08-24 07:28:27 |
+[27Aug2024 21:11:07.801] [main/INFO] [Mods Optimizer/]: | xaerominimap                       | 24.3.0                 | FORGE    | DEFAULT           | 2024-08-16 14:00:09 |
+[27Aug2024 21:11:07.801] [main/INFO] [Mods Optimizer/]: | collective                         | 7.84.0                 | MIXED    | UNKNOWN           | 2024-08-15 15:30:33 |
+[27Aug2024 21:11:07.802] [main/INFO] [Mods Optimizer/]: | turtlechargingstation              | 1.4.2-1.20             | FORGE    | DEFAULT           | 2024-03-07 20:13:18 |
+[27Aug2024 21:11:07.802] [main/INFO] [Mods Optimizer/]: | noisium                            | 2.3.0+mc1.20-1.20.1    | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.803] [main/INFO] [Mods Optimizer/]: | structurize                        | 1.20.1-1.0.752-beta    | FORGE    | DEFAULT           | 2024-08-24 07:34:42 |
+[27Aug2024 21:11:07.803] [main/INFO] [Mods Optimizer/]: | turtlematic                        | 1.3.1                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.804] [main/INFO] [Mods Optimizer/]: | c3me                               | 0.2.0-c3me-alpha.11.52-dirty | MIXED    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.804] [main/INFO] [Mods Optimizer/]: | resourcefullib                     | 2.1.28                 | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.804] [main/INFO] [Mods Optimizer/]: | kubejs_create                      | 2001.2.5-build.2       | FORGE    | UNKNOWN           | 2023-11-20 15:07:27 |
+[27Aug2024 21:11:07.805] [main/INFO] [Mods Optimizer/]: | minecolonies                       | 1.20.1-1.1.644-beta    | FORGE    | DEFAULT           | 2024-08-23 20:52:28 |
+[27Aug2024 21:11:07.805] [main/INFO] [Mods Optimizer/]: | architectury                       | 9.2.14                 | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.806] [main/INFO] [Mods Optimizer/]: | create_pattern_schematics          | 1.1.10+forge-1.20.1    | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.806] [main/INFO] [Mods Optimizer/]: | computercraft                      | 1.113.0                | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.806] [main/INFO] [Mods Optimizer/]: | ferritecore                        | 6.0.1                  | FORGE    | DEFAULT           | 2023-10-22 15:27:07 |
+[27Aug2024 21:11:07.807] [main/INFO] [Mods Optimizer/]: | puzzleslib                         | 8.0.15                 | FORGE    | DEFAULT           | 2023-07-30 20:39:32 |
+[27Aug2024 21:11:07.807] [main/INFO] [Mods Optimizer/]: | create_power_loader                | 1.5.0-mc1.20.1         | FORGE    | DEFAULT           | 2024-05-21 14:56:00 |
+[27Aug2024 21:11:07.807] [main/INFO] [Mods Optimizer/]: | createtrackmap                     | 1.4.0                  | NEOFORGE | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.808] [main/INFO] [Mods Optimizer/]: | valkyrienskies                     | 2.3.0-beta.5           | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.808] [main/INFO] [Mods Optimizer/]: | peripheralium                      | 0.7.0                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.808] [main/INFO] [Mods Optimizer/]: | packetfixer                        | 1.4.2                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.808] [main/INFO] [Mods Optimizer/]: | badoptimizations                   | 2.1.4                  | MIXED    | DATA_PACK         | 2024-08-27 20:56:43 |
+[27Aug2024 21:11:07.809] [main/INFO] [Mods Optimizer/]: | letmedespawn                       | 1.2.1                  | FORGE    | SERVER            | 2024-06-01 23:05:03 |
+[27Aug2024 21:11:07.809] [main/INFO] [Mods Optimizer/]: | yeetusexperimentus                 | 2.3.0-build.4+mc1.20.1 | FORGE    | DEFAULT           | 2023-06-15 16:49:59 |
+[27Aug2024 21:11:07.810] [main/INFO] [Mods Optimizer/]: | create_enchantment_industry        | 1.2.9-d                | FORGE    | DEFAULT           | 2024-05-10 05:24:15 |
+[27Aug2024 21:11:07.810] [main/INFO] [Mods Optimizer/]: | sliceanddice                       | 3.2.1                  | FORGE    | DEFAULT           | 2024-08-27 20:56:44 |
+[27Aug2024 21:11:07.810] [main/INFO] [Mods Optimizer/]: | createaddition                     | 1.20.1-1.2.4d          | FORGE    | DEFAULT           | 2024-06-28 21:43:16 |
+[27Aug2024 21:11:07.810] [main/INFO] [Mods Optimizer/]: -------------------------------------------------------------------------------------------------------------------
+[27Aug2024 21:11:07.811] [main/INFO] [Mods Optimizer/]: ♻ Parsed 89 mods in 271 ms.
+[27Aug2024 21:11:07.811] [main/INFO] [Mods Optimizer/]: ✔ No duplicated mods found.
+[27Aug2024 21:11:07.812] [main/WARN] [Mods Optimizer/]: ✔ No mods for client-side checks found!
+[27Aug2024 21:11:07.812] [main/INFO] [Mods Optimizer/]: ⏱ Mod Optimizer needs 356 ms in total.
+[27Aug2024 21:11:08.235] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.0/fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[27Aug2024 21:11:08.236] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.0/javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[27Aug2024 21:11:08.237] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.0/lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[27Aug2024 21:11:08.238] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/ubuntu/server/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.0/mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[27Aug2024 21:11:09.030] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select two dependency jars from JarJar which have the same identification: Mod File:  and Mod File: . Using Mod File: 
+[27Aug2024 21:11:09.033] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: cloth_config. Using Mod File: /home/ubuntu/server/mods/cloth-config-11.1.118-forge.jar
+[27Aug2024 21:11:09.033] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 83 dependencies adding them to mods collection
+[27Aug2024 21:11:09.767] [main/INFO] [org.sinytra.connector.locator.DependencyResolver/]: Dependency resolution found 25 candidates to load
+[27Aug2024 21:11:10.736] [main/ERROR] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+	Mod ID: 'forge', Requested by: 'jei', Expected range: '[47.3.6,)', Actual version: '47.3.0'
+[27Aug2024 21:11:11.125] [main/INFO] [org.sinytra.connector.service.hacks.ModuleLayerMigrator/]: Successfully made module authlib transformable
+[27Aug2024 21:11:11.814] [main/ERROR] [org.sinytra.connector.loader.ConnectorEarlyLoader/]: Skipping early mod setup due to previous error
+[27Aug2024 21:11:11.822] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[27Aug2024 21:11:11.897] [main/WARN] [mixin/]: Reference map '' for adapter.init.mixins.json could not be read. If this is a development environment you can ignore this message
+[27Aug2024 21:11:18.063] [main/FATAL] [net.minecraftforge.fml.ModLoader/CORE]: Error during pre-loading phase
+net.minecraftforge.fml.ModLoadingException: Mod §ejei§r requires §6forge§r §o47.3.6 or above§r
+§7Currently, §6forge§r§7 is §o47.3.0
+	at net.minecraftforge.fml.ModLoadingException.lambda$fromEarlyException$0(ModLoadingException.java:50) ~[fmlcore-1.20.1-47.3.0.jar%23284!/:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.AbstractList$RandomAccessSpliterator.forEachRemaining(AbstractList.java:720) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:?]
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.<init>(ModLoader.java:96) ~[fmlcore-1.20.1-47.3.0.jar%23284!/:?]
+	at net.minecraftforge.fml.ModLoader.get(ModLoader.java:128) ~[fmlcore-1.20.1-47.3.0.jar%23284!/:?]
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:30) ~[forge-1.20.1-47.3.0-universal.jar%23288!/:?]
+	at net.minecraft.server.Main.main(Main.java:125) ~[server-1.20.1-20230612.114412-srg.jar%23283!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
+[27Aug2024 21:11:18.741] [main/FATAL] [net.minecraftforge.server.loading.ServerModLoader/]: Crash report saved to ./crash-reports/crash-2024-08-27_21.11.18-fml.txt
+[27Aug2024 21:11:18.743] [main/ERROR] [net.minecraft.server.Main/FATAL]: Failed to start the minecraft server
+net.minecraftforge.fml.LoadingFailedException: Loading errors encountered: [
+	Mod §ejei§r requires §6forge§r §o47.3.6 or above§r
+§7Currently, §6forge§r§7 is §o47.3.0
+]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:149) ~[fmlcore-1.20.1-47.3.0.jar%23284!/:?]
+	at net.minecraftforge.server.loading.ServerModLoader.load(ServerModLoader.java:30) ~[forge-1.20.1-47.3.0-universal.jar%23288!/:?]
+	at net.minecraft.server.Main.main(Main.java:125) ~[server-1.20.1-20230612.114412-srg.jar%23283!/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:569) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.0.jar%2369!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
