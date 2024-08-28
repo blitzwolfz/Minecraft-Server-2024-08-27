@@ -1,0 +1,1007 @@
+---- Minecraft Crash Report ----
+
+// Hi. I'm Connector, and I'm a crashaholic
+=========================
+SINYTRA CONNECTOR IS PRESENT!
+Please verify issues are not caused by Connector before reporting them to mod authors.
+If you're unsure, file a report on Connector's issue tracker found at https://github.com/Sinytra/Connector/issues.
+=========================
+
+// I just don't know what went wrong :(
+
+Time: 2024-08-28 05:55:12
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.00 seconds (should be max 0.05)
+	at net.minecraft.world.level.chunk.storage.SectionStorage.m_63801_(SectionStorage.java:137) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:c2me-base.mixins.json:access.ISerializingRegionBasedStorage from mod c2me_base,pl:mixin:APP:c2me-threading-chunkio.mixins.json:MixinSerializingRegionBasedStorage from mod c2me_threading_chunkio,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.chunk.storage.SectionStorage.update(SectionStorage.java:1026) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:c2me-base.mixins.json:access.ISerializingRegionBasedStorage from mod c2me_base,pl:mixin:APP:c2me-threading-chunkio.mixins.json:MixinSerializingRegionBasedStorage from mod c2me_threading_chunkio,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ChunkMap.mda7c630$c2me_threading_chunkio$lambda$c2me$loadChunk0$10$19(ChunkMap.java:11078) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.server.level.ChunkMapAccessor from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.tick_ship_chunks.MixinChunkMap from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:server.world.MixinChunkMap from mod valkyrienskies,pl:mixin:APP:railways.mixins.json:ChunkMapAccessor from mod railways,pl:mixin:APP:fabric-networking-api-v1.mixins.json:accessor.ThreadedAnvilChunkStorageAccessor from mod fabric_networking_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:ThreadedAnvilChunkStorageMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:ae2.mixins.json:chunkloading.ChunkMapMixin from mod ae2,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading.checks.MixinThreadedAnvilChunkStorage from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinThreadedAnvilChunkStorage from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-base.mixins.json:access.IThreadedAnvilChunkStorage from mod c2me_base,pl:mixin:APP:c2me-base.mixins.json:scheduler.MixinThreadedAnvilChunkStorage from mod c2me_base,pl:mixin:APP:c2me-threading-lighting.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_threading_lighting,pl:mixin:APP:c2me-opts-scheduling.mixins.json:fix_unload.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:general_overheads.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.disable_vanilla_mid_tick_autosave.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.enhanced_autosave.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:task_scheduling.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_notickvd,pl:mixin:APP:c2me-threading-chunkio.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_threading_chunkio,pl:mixin:APP:railways-common.mixins.json:conductor_possession.ChunkMapMixin from mod railways,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ChunkMap$$Lambda$19673/0x000000d80359f4e8.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.m_6367_(ServerChunkCache.java:541) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:130) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.m_7245_(ServerChunkCache.java:549) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache.redirect$zda000$c2me_base$beforeAwaitChunk(ServerChunkCache.java:2119) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.server.level.ServerChunkCacheAccessor from mod valkyrienskies,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinServerChunkManager from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-base.mixins.json:access.IServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-base.mixins.json:priority.MixinServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:task_scheduling.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinServerChunkManager from mod c2me_notickvd,pl:mixin:APP:c2me-opts-allocs.mixins.json:asm.ASMTargets from mod c2me_opts_allocs,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:asm.ASMTargets from mod c2me_opts_chunk_access,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:async_chunk_request.MixinServerChunkManager from mod c2me_opts_chunk_access,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache.m_7587_(ServerChunkCache.java:131) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.server.level.ServerChunkCacheAccessor from mod valkyrienskies,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinServerChunkManager from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-base.mixins.json:access.IServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-base.mixins.json:priority.MixinServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:task_scheduling.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinServerChunkManager from mod c2me_notickvd,pl:mixin:APP:c2me-opts-allocs.mixins.json:asm.ASMTargets from mod c2me_opts_allocs,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:asm.ASMTargets from mod c2me_opts_chunk_access,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:async_chunk_request.MixinServerChunkManager from mod c2me_opts_chunk_access,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.Level.m_6522_(Level.java:187) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:sliceanddice.mixins.json:LevelMixin from mod sliceanddice,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.clip_replace.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.get_entities.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.world_border.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:world.level.MixinLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:WorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LevelMixin from mod kubejs,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading_detections.random_instances.MixinWorld from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinWorld from mod c2me_notickvd,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:connector_pre_launch:A,re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:fabric-rendering-data-attachment-v1.mixins.json:WorldViewMixin from mod fabric_rendering_data_attachment_v1,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.Level.m_6325_(Level.java:182) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:sliceanddice.mixins.json:LevelMixin from mod sliceanddice,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.clip_replace.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.get_entities.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.world_border.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:world.level.MixinLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:WorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LevelMixin from mod kubejs,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading_detections.random_instances.MixinWorld from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinWorld from mod c2me_notickvd,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.Level.m_8055_(Level.java:355) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:sliceanddice.mixins.json:LevelMixin from mod sliceanddice,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.clip_replace.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.get_entities.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.world_border.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:world.level.MixinLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:WorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LevelMixin from mod kubejs,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading_detections.random_instances.MixinWorld from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinWorld from mod c2me_notickvd,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.LivingEntity.handler$znh000$valkyrienskies$preDismountVehicle(LivingEntity.java:6553) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:mixin:APP:do_a_barrel_roll.mixins.json:LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:MixinLivingEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:fabric-entity-events-v1.mixins.json:elytra.LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:createbigcannons-common.mixins.json:LivingEntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.dismount_dead_entities.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.ladders.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:LivingEntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:LivingEntityMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LivingEntityMixin from mod kubejs,pl:mixin:APP:copycats-common.mixins.json:copycat.trapdoor.LivingEntityMixin from mod copycats,pl:mixin:APP:create.mixins.json:CustomItemUseEffectsMixin from mod create,pl:mixin:APP:create.mixins.json:LavaSwimmingMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.LivingEntityAccessor from mod create,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.LivingEntity.m_21028_(LivingEntity.java) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:mixin:APP:do_a_barrel_roll.mixins.json:LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:MixinLivingEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:fabric-entity-events-v1.mixins.json:elytra.LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:createbigcannons-common.mixins.json:LivingEntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.dismount_dead_entities.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.ladders.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:LivingEntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:LivingEntityMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LivingEntityMixin from mod kubejs,pl:mixin:APP:copycats-common.mixins.json:copycat.trapdoor.LivingEntityMixin from mod copycats,pl:mixin:APP:create.mixins.json:CustomItemUseEffectsMixin from mod create,pl:mixin:APP:create.mixins.json:LavaSwimmingMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.LivingEntityAccessor from mod create,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.LivingEntity.m_8127_(LivingEntity.java:2747) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:mixin:APP:do_a_barrel_roll.mixins.json:LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:MixinLivingEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:fabric-entity-events-v1.mixins.json:elytra.LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:createbigcannons-common.mixins.json:LivingEntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.dismount_dead_entities.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.ladders.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:LivingEntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:LivingEntityMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LivingEntityMixin from mod kubejs,pl:mixin:APP:copycats-common.mixins.json:copycat.trapdoor.LivingEntityMixin from mod copycats,pl:mixin:APP:create.mixins.json:CustomItemUseEffectsMixin from mod create,pl:mixin:APP:create.mixins.json:LavaSwimmingMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.LivingEntityAccessor from mod create,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.Entity$$Lambda$20927/0x000000d80375f7c0.accept(Unknown Source) ~[?:?] {}
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-31.1-jre.jar%2374!/:?] {re:mixin}
+	at net.minecraft.world.entity.Entity.m_142467_(Entity.java:3366) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:create.mixins.json:EntityMixin from mod create,pl:mixin:APP:balm.mixins.json:EntityMixin from mod balm,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.EntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:AccessorEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:EntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:sliceanddice.mixins.json:EntityMixin from mod sliceanddice,pl:mixin:APP:createbigcannons-common.mixins.json:EntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.entity.EntityAccessor from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:entity.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.distance_replace.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.entity_collision.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-forge.mixins.json:feature.water_in_ships_entity.MixinEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:EntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:EntityMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:railways-common.mixins.json:conductor_possession.MixinEntity from mod railways,pl:mixin:APP:kubejs-forge.mixins.json:EntityMixin from mod kubejs,pl:mixin:APP:kubejs-common.mixins.json:EntityMixin from mod kubejs,pl:mixin:APP:create_interactive-common.mixins.json:MixinEntity from mod create_interactive,pl:mixin:APP:create.mixins.json:ContraptionDriverInteractMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.EntityAccessor from mod create,pl:mixin:APP:createdieselgenerators.mixins.json:EntityMixin from mod createdieselgenerators,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157585_(PersistentEntitySectionManager.java:246) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager$$Lambda$21958/0x000000d80387e280.accept(Unknown Source) ~[?:?] {}
+	at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157594_(PersistentEntitySectionManager.java:235) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager$$Lambda$21956/0x000000d80387de08.accept(Unknown Source) ~[?:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157512_(PersistentEntitySectionManager.java:218) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157568_(PersistentEntitySectionManager.java:234) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.handler$zoh000$valkyrienskies$replaceProcessUnloads(PersistentEntitySectionManager.java:566) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157577_(PersistentEntitySectionManager.java) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157506_(PersistentEntitySectionManager.java:270) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:355) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_serverlevel,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_serverlevel,pl:mixin:APP:snowrealmagic.mixins.json:ServerLevelMixin from mod snowrealmagic,pl:mixin:APP:createbigcannons-common.mixins.json:ServerLevelMixin from mod createbigcannons,pl:mixin:APP:immersive_weathering-common.mixins.json:ServerLevelMixin from mod immersive_weathering,pl:mixin:APP:starlight.mixins.json:common.world.ServerWorldMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinServerLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:server.world.MixinServerLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:ServerWorldMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-api-lookup-api-v1.mixins.json:ServerWorldMixin from mod fabric_api_lookup_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:ServerWorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:ServerLevelMixin from mod kubejs,pl:mixin:APP:create.mixins.json:accessor.ServerLevelAccessor from mod create,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinServerWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerWorld from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:util.log4j2shutdownhookisnomore.MixinMinecraftDedicatedServer from mod c2me_base,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer$$Lambda$19089/0x000000d80340bb00.run(Unknown Source) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Suspected Mods: 
+	Connectored Concurrent Chunk Management Engine (Base) (c2me_base), Version: 0.2.0-c3me-alpha.11.61
+		Mixin class: com.ishland.c2me.base.mixin.priority.MixinServerChunkManager
+		Target: net.minecraft.server.level.ServerChunkCache
+		at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerChunkCache.redirect$zda000$c2me_base$beforeAwaitChunk(ServerChunkCache.java:2119)
+
+	Connectored Concurrent Chunk Management Engine (Threading/WorldGen) (c2me_threading_chunkio), Version: 0.2.0-c3me-alpha.11.61
+		Mixin class: com.ishland.c2me.threading.chunkio.mixin.MixinSerializingRegionBasedStorage
+		Target: net.minecraft.world.level.chunk.storage.SectionStorage
+		at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.chunk.storage.SectionStorage.update(SectionStorage.java:1026)
+
+	Valkyrien Skies 2 (valkyrienskies), Version: 2.3.0-beta.5
+		Issue tracker URL: https://github.com/ValkyrienSkies/Valkyrien-Skies-2/issues
+		Mixin class: org.valkyrienskies.mod.mixin.feature.dismount_dead_entities.MixinLivingEntity
+		Target: net.minecraft.world.entity.LivingEntity
+		at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.entity.LivingEntity.handler$znh000$valkyrienskies$preDismountVehicle(LivingEntity.java:6553)
+Stacktrace:
+	at net.minecraft.world.level.chunk.storage.SectionStorage.m_63801_(SectionStorage.java:137) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:c2me-base.mixins.json:access.ISerializingRegionBasedStorage from mod c2me_base,pl:mixin:APP:c2me-threading-chunkio.mixins.json:MixinSerializingRegionBasedStorage from mod c2me_threading_chunkio,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.chunk.storage.SectionStorage.update(SectionStorage.java:1026) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:c2me-base.mixins.json:access.ISerializingRegionBasedStorage from mod c2me_base,pl:mixin:APP:c2me-threading-chunkio.mixins.json:MixinSerializingRegionBasedStorage from mod c2me_threading_chunkio,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ChunkMap.mda7c630$c2me_threading_chunkio$lambda$c2me$loadChunk0$10$19(ChunkMap.java:11078) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.server.level.ChunkMapAccessor from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.tick_ship_chunks.MixinChunkMap from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:server.world.MixinChunkMap from mod valkyrienskies,pl:mixin:APP:railways.mixins.json:ChunkMapAccessor from mod railways,pl:mixin:APP:fabric-networking-api-v1.mixins.json:accessor.ThreadedAnvilChunkStorageAccessor from mod fabric_networking_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:ThreadedAnvilChunkStorageMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:ae2.mixins.json:chunkloading.ChunkMapMixin from mod ae2,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading.checks.MixinThreadedAnvilChunkStorage from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinThreadedAnvilChunkStorage from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-base.mixins.json:access.IThreadedAnvilChunkStorage from mod c2me_base,pl:mixin:APP:c2me-base.mixins.json:scheduler.MixinThreadedAnvilChunkStorage from mod c2me_base,pl:mixin:APP:c2me-threading-lighting.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_threading_lighting,pl:mixin:APP:c2me-opts-scheduling.mixins.json:fix_unload.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:general_overheads.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.disable_vanilla_mid_tick_autosave.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:idle_tasks.autosave.enhanced_autosave.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:task_scheduling.MixinThreadedAnvilChunkStorage from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_notickvd,pl:mixin:APP:c2me-threading-chunkio.mixins.json:MixinThreadedAnvilChunkStorage from mod c2me_threading_chunkio,pl:mixin:APP:railways-common.mixins.json:conductor_possession.ChunkMapMixin from mod railways,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ChunkMap$$Lambda$19673/0x000000d80359f4e8.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.m_6367_(ServerChunkCache.java:541) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:130) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.m_7245_(ServerChunkCache.java:549) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache.redirect$zda000$c2me_base$beforeAwaitChunk(ServerChunkCache.java:2119) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.server.level.ServerChunkCacheAccessor from mod valkyrienskies,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinServerChunkManager from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-base.mixins.json:access.IServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-base.mixins.json:priority.MixinServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:task_scheduling.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinServerChunkManager from mod c2me_notickvd,pl:mixin:APP:c2me-opts-allocs.mixins.json:asm.ASMTargets from mod c2me_opts_allocs,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:asm.ASMTargets from mod c2me_opts_chunk_access,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:async_chunk_request.MixinServerChunkManager from mod c2me_opts_chunk_access,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerChunkCache.m_7587_(ServerChunkCache.java:131) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.server.level.ServerChunkCacheAccessor from mod valkyrienskies,pl:mixin:APP:c2me-fixes-general-threading-issues.mixins.json:asynccatchers.MixinServerChunkManager from mod c2me_fixes_general_threading_issues,pl:mixin:APP:c2me-base.mixins.json:access.IServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-base.mixins.json:priority.MixinServerChunkManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:task_scheduling.MixinServerChunkManager from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinServerChunkManager from mod c2me_notickvd,pl:mixin:APP:c2me-opts-allocs.mixins.json:asm.ASMTargets from mod c2me_opts_allocs,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:asm.ASMTargets from mod c2me_opts_chunk_access,pl:mixin:APP:c2me-opts-chunk-access.mixins.json:async_chunk_request.MixinServerChunkManager from mod c2me_opts_chunk_access,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.Level.m_6522_(Level.java:187) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:sliceanddice.mixins.json:LevelMixin from mod sliceanddice,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.clip_replace.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.get_entities.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.world_border.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:world.level.MixinLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:WorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LevelMixin from mod kubejs,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading_detections.random_instances.MixinWorld from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinWorld from mod c2me_notickvd,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.LevelReader.m_46819_(LevelReader.java:129) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:connector_pre_launch:A,re:mixin,pl:connector_pre_launch:A,re:classloading,pl:mixin:APP:fabric-rendering-data-attachment-v1.mixins.json:WorldViewMixin from mod fabric_rendering_data_attachment_v1,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.Level.m_6325_(Level.java:182) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:sliceanddice.mixins.json:LevelMixin from mod sliceanddice,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.clip_replace.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.get_entities.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.world_border.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:world.level.MixinLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:WorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LevelMixin from mod kubejs,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading_detections.random_instances.MixinWorld from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinWorld from mod c2me_notickvd,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.Level.m_8055_(Level.java:355) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:sliceanddice.mixins.json:LevelMixin from mod sliceanddice,pl:mixin:APP:starlight.mixins.json:common.world.LevelMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.clip_replace.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.get_entities.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.world_border.MixinLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:world.level.MixinLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:WorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LevelMixin from mod kubejs,pl:mixin:APP:c2me-fixes-worldgen-threading-issues.mixins.json:threading_detections.random_instances.MixinWorld from mod c2me_fixes_worldgen_threading_issues,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-notickvd.mixins.json:MixinWorld from mod c2me_notickvd,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.LivingEntity.handler$znh000$valkyrienskies$preDismountVehicle(LivingEntity.java:6553) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:mixin:APP:do_a_barrel_roll.mixins.json:LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:MixinLivingEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:fabric-entity-events-v1.mixins.json:elytra.LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:createbigcannons-common.mixins.json:LivingEntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.dismount_dead_entities.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.ladders.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:LivingEntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:LivingEntityMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LivingEntityMixin from mod kubejs,pl:mixin:APP:copycats-common.mixins.json:copycat.trapdoor.LivingEntityMixin from mod copycats,pl:mixin:APP:create.mixins.json:CustomItemUseEffectsMixin from mod create,pl:mixin:APP:create.mixins.json:LavaSwimmingMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.LivingEntityAccessor from mod create,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.LivingEntity.m_21028_(LivingEntity.java) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:mixin:APP:do_a_barrel_roll.mixins.json:LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:MixinLivingEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:fabric-entity-events-v1.mixins.json:elytra.LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:createbigcannons-common.mixins.json:LivingEntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.dismount_dead_entities.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.ladders.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:LivingEntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:LivingEntityMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LivingEntityMixin from mod kubejs,pl:mixin:APP:copycats-common.mixins.json:copycat.trapdoor.LivingEntityMixin from mod copycats,pl:mixin:APP:create.mixins.json:CustomItemUseEffectsMixin from mod create,pl:mixin:APP:create.mixins.json:LavaSwimmingMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.LivingEntityAccessor from mod create,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.LivingEntity.m_8127_(LivingEntity.java:2747) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:mixin,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:connectormod:insertInjectionTarget,xf:fml:connectormod:updateItemUseStartTreshold,pl:mixin:APP:do_a_barrel_roll.mixins.json:LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.LivingEntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:MixinLivingEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:fabric-entity-events-v1.mixins.json:elytra.LivingEntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:createbigcannons-common.mixins.json:LivingEntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.dismount_dead_entities.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.ladders.MixinLivingEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:LivingEntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:LivingEntityMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:LivingEntityMixin from mod kubejs,pl:mixin:APP:copycats-common.mixins.json:copycat.trapdoor.LivingEntityMixin from mod copycats,pl:mixin:APP:create.mixins.json:CustomItemUseEffectsMixin from mod create,pl:mixin:APP:create.mixins.json:LavaSwimmingMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.LivingEntityAccessor from mod create,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.entity.Entity$$Lambda$20927/0x000000d80375f7c0.accept(Unknown Source) ~[?:?] {}
+	at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-31.1-jre.jar%2374!/:?] {re:mixin}
+	at net.minecraft.world.entity.Entity.m_142467_(Entity.java:3366) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:create.mixins.json:EntityMixin from mod create,pl:mixin:APP:balm.mixins.json:EntityMixin from mod balm,pl:mixin:APP:do_a_barrel_roll.mixins.json:roll.entity.EntityMixin from mod do_a_barrel_roll,pl:mixin:APP:curios.mixins.json:AccessorEntity from mod curios,pl:mixin:APP:fabric-entity-events-v1.mixins.json:EntityMixin from mod fabric_entity_events_v1,pl:mixin:APP:sliceanddice.mixins.json:EntityMixin from mod sliceanddice,pl:mixin:APP:createbigcannons-common.mixins.json:EntityMixin from mod createbigcannons,pl:mixin:APP:valkyrienskies-common.mixins.json:accessors.entity.EntityAccessor from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:entity.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.distance_replace.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.entity_collision.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinEntity from mod valkyrienskies,pl:mixin:APP:valkyrienskies-forge.mixins.json:feature.water_in_ships_entity.MixinEntity from mod valkyrienskies,pl:mixin:APP:netherportalfix.mixins.json:EntityAccessor from mod netherportalfix,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:AttachmentTargetsMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:EntityMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:railways-common.mixins.json:conductor_possession.MixinEntity from mod railways,pl:mixin:APP:kubejs-forge.mixins.json:EntityMixin from mod kubejs,pl:mixin:APP:kubejs-common.mixins.json:EntityMixin from mod kubejs,pl:mixin:APP:create_interactive-common.mixins.json:MixinEntity from mod create_interactive,pl:mixin:APP:create.mixins.json:ContraptionDriverInteractMixin from mod create,pl:mixin:APP:create.mixins.json:accessor.EntityAccessor from mod create,pl:mixin:APP:createdieselgenerators.mixins.json:EntityMixin from mod createdieselgenerators,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157585_(PersistentEntitySectionManager.java:246) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager$$Lambda$21958/0x000000d80387e280.accept(Unknown Source) ~[?:?] {}
+	at java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411) ~[?:?] {}
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?] {}
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?] {}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157594_(PersistentEntitySectionManager.java:235) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager$$Lambda$21956/0x000000d80387de08.accept(Unknown Source) ~[?:?] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {re:mixin}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157512_(PersistentEntitySectionManager.java:218) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157568_(PersistentEntitySectionManager.java:234) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.handler$zoh000$valkyrienskies$replaceProcessUnloads(PersistentEntitySectionManager.java:566) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157577_(PersistentEntitySectionManager.java) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.world.level.entity.PersistentEntitySectionManager.m_157506_(PersistentEntitySectionManager.java:270) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinPersistentEntitySectionManager from mod valkyrienskies,pl:mixin:APP:c2me-base.mixins.json:access.IServerEntityManager from mod c2me_base,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerEntityManager from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.level.ServerLevel.m_8793_(ServerLevel.java:355) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_serverlevel,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_serverlevel,pl:mixin:APP:snowrealmagic.mixins.json:ServerLevelMixin from mod snowrealmagic,pl:mixin:APP:createbigcannons-common.mixins.json:ServerLevelMixin from mod createbigcannons,pl:mixin:APP:immersive_weathering-common.mixins.json:ServerLevelMixin from mod immersive_weathering,pl:mixin:APP:starlight.mixins.json:common.world.ServerWorldMixin from mod starlight,pl:mixin:APP:valkyrienskies-common.mixins.json:feature.shipyard_entities.MixinServerLevel from mod valkyrienskies,pl:mixin:APP:valkyrienskies-common.mixins.json:server.world.MixinServerLevel from mod valkyrienskies,pl:mixin:APP:fabric-data-attachment-api-v1.mixins.json:ServerWorldMixin from mod fabric_data_attachment_api_v1,pl:mixin:APP:fabric-api-lookup-api-v1.mixins.json:ServerWorldMixin from mod fabric_api_lookup_api_v1,pl:mixin:APP:fabric-lifecycle-events-v1.mixins.json:ServerWorldMixin from mod fabric_lifecycle_events_v1,pl:mixin:APP:kubejs-common.mixins.json:ServerLevelMixin from mod kubejs,pl:mixin:APP:create.mixins.json:accessor.ServerLevelAccessor from mod create,pl:mixin:APP:c2me-opts-scheduling.mixins.json:mid_tick_chunk_tasks.MixinServerWorld from mod c2me_opts_scheduling,pl:mixin:APP:c2me-opts-scheduling.mixins.json:shutdown.MixinServerWorld from mod c2me_opts_scheduling,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_5703_(MinecraftServer.java:893) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.dedicated.DedicatedServer.m_5703_(DedicatedServer.java:283) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,pl:connector_pre_launch:A,re:computing_frames,pl:accesstransformer:B,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:c2me-base.mixins.json:util.log4j2shutdownhookisnomore.MixinMinecraftDedicatedServer from mod c2me_base,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_5705_(MinecraftServer.java:814) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:661) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:251) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:connector_pre_launch:A,re:classloading,pl:accesstransformer:B,xf:fml:xaerominimap:xaero_minecraftserver,xf:fml:xaeroworldmap:xaero_wm_minecraftserver,pl:mixin:A,pl:connector_pre_launch:A}
+-- Thread Dump --
+Details:
+	Threads: "Reference Handler" daemon prio=10 Id=2 RUNNABLE
+	at java.base@17.0.12/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	at java.base@17.0.12/java.lang.ref.Reference.processPendingReferences(Reference.java:253)
+	at java.base@17.0.12/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:215)
+
+
+"Finalizer" daemon prio=8 Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@61f5d9ae
+	at java.base@17.0.12/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@61f5d9ae
+	at java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at java.base@17.0.12/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:172)
+
+
+"Signal Dispatcher" daemon prio=9 Id=4 RUNNABLE
+
+
+"Common-Cleaner" daemon prio=8 Id=11 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@6f322be0
+	at java.base@17.0.12/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6f322be0
+	at java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.12/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+	at java.base@17.0.12/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+
+"Notification Thread" daemon prio=9 Id=12 RUNNABLE
+
+
+"c2me-prioritized-0" daemon prio=5 Id=22 RUNNABLE
+	at MC-BOOTSTRAP/datafixerupper@6.0.8/com.mojang.serialization.MapDecoder.compressedDecode(MapDecoder.java:20)
+	at MC-BOOTSTRAP/datafixerupper@6.0.8/com.mojang.serialization.MapCodec$MapCodecCodec.decode(MapCodec.java:91)
+	at MC-BOOTSTRAP/datafixerupper@6.0.8/com.mojang.serialization.Codec$1.decode(Codec.java:45)
+	at MC-BOOTSTRAP/datafixerupper@6.0.8/com.mojang.serialization.Codec$4.decode(Codec.java:217)
+	at MC-BOOTSTRAP/datafixerupper@6.0.8/com.mojang.serialization.codecs.ListCodec.lambda$decode$2(ListCodec.java:46)
+	at MC-BOOTSTRAP/datafixerupper@6.0.8/com.mojang.serialization.codecs.ListCodec$$Lambda$760/0x000000d8012e5ec8.accept(Unknown Source)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.nbt.NbtOps.m_244789_(NbtOps.java:281)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.nbt.NbtOps$$Lambda$17388/0x000000d80328b488.accept(Unknown Source)
+	...
+
+
+"JNA Cleaner" daemon prio=5 Id=23 WAITING on java.lang.ref.ReferenceQueue$Lock@6b0db2de
+	at java.base@17.0.12/java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6b0db2de
+	at java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+	at java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:176)
+	at MC-BOOTSTRAP/com.sun.jna@5.12.1/com.sun.jna.internal.Cleaner$1.run(Cleaner.java:58)
+
+
+"Timer hack thread" daemon prio=5 Id=24 TIMED_WAITING
+	at java.base@17.0.12/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.Util$9.run(Util.java:672)
+
+
+"Structurize IO Worker #0" daemon prio=5 Id=29 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2e0f21db
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2e0f21db
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingDeque.takeFirst(LinkedBlockingDeque.java:485)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingDeque.take(LinkedBlockingDeque.java:673)
+	...
+
+
+"KubeJS Background Thread" daemon prio=5 Id=30 TIMED_WAITING
+	at java.base@17.0.12/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/kubejs@2001.6.5-build.14/dev.latvian.mods.kubejs.util.KubeJSBackgroundThread.run(KubeJSBackgroundThread.java:26)
+
+
+"pool-4-thread-1" prio=5 Id=31 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@61f8a51d
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@61f8a51d
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Thread-3" daemon prio=5 Id=32 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at MC-BOOTSTRAP/com.electronwill.nightconfig.core@3.6.4/com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:190)
+
+
+"FileSystemWatchService" daemon prio=5 Id=33 RUNNABLE (in native)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"DefaultDispatcher-worker-1" daemon prio=5 Id=34 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-2" daemon prio=5 Id=35 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-3" daemon prio=5 Id=36 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-4" daemon prio=5 Id=37 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-5" daemon prio=5 Id=38 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-6" daemon prio=5 Id=39 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"FileSystemWatchService" daemon prio=5 Id=40 RUNNABLE (in native)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=41 RUNNABLE (in native)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=42 RUNNABLE (in native)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Yggdrasil Key Fetcher" daemon prio=5 Id=56 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1febefe9
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1febefe9
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"pool-5-thread-1" prio=5 Id=58 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@19f63588
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@19f63588
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Server thread" prio=5 Id=62 RUNNABLE
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.chunk.storage.SectionStorage.m_63801_(SectionStorage.java:137)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.world.level.chunk.storage.SectionStorage.update(SectionStorage.java:1026)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ChunkMap.mda7c630$c2me_threading_chunkio$lambda$c2me$loadChunk0$10$19(ChunkMap.java:11078)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ChunkMap$$Lambda$19673/0x000000d80359f4e8.accept(Unknown Source)
+	at java.base@17.0.12/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base@17.0.12/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.m_6367_(ServerChunkCache.java:541)
+	...
+
+
+"DestroyJavaVM" prio=5 Id=64 RUNNABLE
+
+
+"Server console handler" daemon prio=5 Id=65 RUNNABLE
+	at java.base@17.0.12/java.io.FileInputStream.read0(Native Method)
+	at java.base@17.0.12/java.io.FileInputStream.read(FileInputStream.java:228)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at MC-BOOTSTRAP/jline.terminal@3.12.1/org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133)
+	at MC-BOOTSTRAP/jline.reader@3.12.1/org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	...
+
+
+"Netty Epoll Server IO #0" daemon prio=5 Id=68 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #1" daemon prio=5 Id=69 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"FileSystemWatchService" daemon prio=5 Id=70 RUNNABLE (in native)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at java.base@17.0.12/sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"ComputerCraft-Network-0" daemon prio=3 Id=71 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	...
+
+
+"ComputerCraft-Network-1" daemon prio=3 Id=72 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	...
+
+
+"ComputerCraft-Network-2" daemon prio=3 Id=77 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	...
+
+
+"nioEventLoopGroup-2-1" prio=10 Id=78 RUNNABLE
+	at java.base@17.0.12/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@17.0.12/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:118)
+	at java.base@17.0.12/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@6a544a00
+	-  locked sun.nio.ch.EPollSelectorImpl@d13c70f
+	at java.base@17.0.12/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.82.Final/io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.82.Final/io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:883)
+	at MC-BOOTSTRAP/io.netty.transport@4.1.82.Final/io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:526)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	...
+
+
+"Physics thread" prio=8 Id=79 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at TRANSFORMER/valkyrienskies@2.3.0-beta.5/org.valkyrienskies.core.impl.shadow.Ap.a(Unknown Source)
+	at TRANSFORMER/valkyrienskies@2.3.0-beta.5/org.valkyrienskies.core.impl.shadow.Ap.a(Unknown Source)
+	at TRANSFORMER/valkyrienskies@2.3.0-beta.5/org.valkyrienskies.core.impl.shadow.Ap.run(Unknown Source)
+	at TRANSFORMER/valkyrienskies@2.3.0-beta.5/org.valkyrienskies.core.impl.shadow.At$1.a(Unknown Source)
+	at TRANSFORMER/valkyrienskies@2.3.0-beta.5/org.valkyrienskies.core.impl.shadow.At$1.invoke(Unknown Source)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlin.concurrent.ThreadsKt$thread$thread$1.run(Thread.kt:30)
+
+
+"ComputerCraft-Network-3" daemon prio=3 Id=80 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4e20de94
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+	at java.base@17.0.12/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	...
+
+
+"c2me-sched" daemon prio=5 Id=81 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2a806404
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2a806404
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"IOWorker-0" daemon prio=4 Id=82 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2f25ea9
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2f25ea9
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"IOWorker-1" daemon prio=4 Id=83 RUNNABLE
+	at java.base@17.0.12/java.util.zip.Inflater.inflateBytesBytes(Native Method)
+	at java.base@17.0.12/java.util.zip.Inflater.inflate(Inflater.java:378)
+	-  locked java.util.zip.Inflater$InflaterZStreamRef@4a6ee41d
+	at java.base@17.0.12/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:152)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.util.FastBufferedInputStream.m_196572_(FastBufferedInputStream.java:94)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.util.FastBufferedInputStream.read(FastBufferedInputStream.java:47)
+	at java.base@17.0.12/java.io.DataInputStream.readFully(DataInputStream.java:201)
+	at java.base@17.0.12/java.io.DataInputStream.readFully(DataInputStream.java:172)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.nbt.ByteArrayTag$1.m_7300_(ByteArrayTag.java:27)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@72a22fe8
+
+
+"minecraft_overworld - Light" daemon prio=4 Id=84 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@222b31a
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@222b31a
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"IOWorker-2" daemon prio=4 Id=85 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2b2b471e
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@2b2b471e
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3465)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3436)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1625)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+	...
+
+
+"Server Watchdog" daemon prio=5 Id=86 RUNNABLE
+	at java.management@17.0.12/sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at java.management@17.0.12/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:528)
+	at java.management@17.0.12/sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:516)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:41)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"LanServerPinger #1" daemon prio=5 Id=87 TIMED_WAITING
+	at java.base@17.0.12/java.lang.Thread.sleep(Native Method)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.server.LanServerPinger.run(LanServerPinger.java:48)
+
+
+"TrackMap watcher" prio=5 Id=91 TIMED_WAITING on kotlinx.coroutines.BlockingCoroutine@3b3c53c4
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on kotlinx.coroutines.BlockingCoroutine@3b3c53c4
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:98)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source)
+	at TRANSFORMER/createtrackmap@1.4/littlechasiu.ctm.TrackWatcher$start$1.invoke(TrackWatcher.kt:40)
+	...
+
+
+"DefaultDispatcher-worker-7" daemon prio=5 Id=93 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-8" daemon prio=5 Id=94 TIMED_WAITING
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:376)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.park(CoroutineScheduler.kt:856)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.tryPark(CoroutineScheduler.kt:801)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:749)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:702)
+
+
+"DefaultDispatcher-worker-9" daemon prio=8 Id=96 RUNNABLE
+	at java.base@17.0.12/sun.nio.ch.EPoll.wait(Native Method)
+	at java.base@17.0.12/sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:118)
+	at java.base@17.0.12/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+	-  locked sun.nio.ch.Util$2@6cf16b2
+	-  locked sun.nio.ch.EPollSelectorImpl@11e2df12
+	at java.base@17.0.12/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+	at TRANSFORMER/createtrackmap@1.4/io.ktor.network.selector.ActorSelectorManager.select(ActorSelectorManager.kt:98)
+	at TRANSFORMER/createtrackmap@1.4/io.ktor.network.selector.ActorSelectorManager.access$select(ActorSelectorManager.kt:18)
+	at TRANSFORMER/createtrackmap@1.4/io.ktor.network.selector.ActorSelectorManager$select$1.invokeSuspend(ActorSelectorManager.kt)
+	at LAYER PLUGIN/thedarkcolour.kotlinforforge@4.11.0-all/kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	...
+
+
+"Netty Epoll Server IO #2" daemon prio=5 Id=98 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #3" daemon prio=5 Id=99 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #4" daemon prio=5 Id=103 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Thread-33" prio=5 Id=105 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@60807987
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@60807987
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+	at java.base@17.0.12/java.util.concurrent.PriorityBlockingQueue.poll(PriorityBlockingQueue.java:549)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Thread-34" prio=4 Id=106 TIMED_WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@39fba420
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@39fba420
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+	at java.base@17.0.12/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #5" daemon prio=5 Id=107 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #6" daemon prio=5 Id=108 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Netty Epoll Server IO #7" daemon prio=5 Id=109 RUNNABLE (in native)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native Method)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:209)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.Native.epollWait(Native.java:202)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.epollWaitNoTimerChange(EpollEventLoop.java:306)
+	at MC-BOOTSTRAP/io.netty.transport.classes.epoll@4.1.82.Final/io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:363)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at MC-BOOTSTRAP/io.netty.common@4.1.82.Final/io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+"Chunky-minecraft:overworld Thread" daemon prio=5 Id=119 WAITING on java.util.concurrent.Semaphore$NonfairSync@477f4f2b
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.Semaphore$NonfairSync@477f4f2b
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.park(LockSupport.java:211)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:715)
+	at java.base@17.0.12/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1047)
+	at java.base@17.0.12/java.util.concurrent.Semaphore.acquire(Semaphore.java:318)
+	at TRANSFORMER/chunky@1.3.146/org.popcraft.chunky.GenerationTask.run(GenerationTask.java:140)
+	at java.base@17.0.12/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base@17.0.12/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	...
+
+	Number of locked synchronizers = 1
+	- java.util.concurrent.ThreadPoolExecutor$Worker@5f154274
+
+
+"Worker-Main-11" daemon prio=5 Id=120 TIMED_WAITING on java.util.concurrent.ForkJoinPool@40621299
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@40621299
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Worker-Main-12" daemon prio=5 Id=121 TIMED_WAITING on java.util.concurrent.ForkJoinPool@40621299
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@40621299
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"Worker-Main-13" daemon prio=5 Id=122 TIMED_WAITING on java.util.concurrent.ForkJoinPool@40621299
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@40621299
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+	at java.base@17.0.12/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+"process reaper" daemon prio=10 Id=123 TIMED_WAITING on java.util.concurrent.SynchronousQueue$TransferStack@234d1753
+	at java.base@17.0.12/jdk.internal.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.SynchronousQueue$TransferStack@234d1753
+	at java.base@17.0.12/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+	at java.base@17.0.12/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+	at java.base@17.0.12/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+	at java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base@17.0.12/java.lang.Thread.run(Thread.java:840)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerWatchdog.run(ServerWatchdog.java:56) ~[server-1.20.1-20230612.114412-srg.jar%23287!/:?] {re:classloading,pl:connector_pre_launch:A}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {re:mixin}
+
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 0, entities: 85,84,50,530,529,0,1 [minecraft:chest_minecart:28,minecraft:pig:15,minecraft:chicken:11,minecraft:item:10,minecraft:sheep:8], block_entities: 17 [minecraft:mob_spawner:15,minecraft:beehive:2], block_ticks: 21, fluid_ticks: 104, chunk_source: Chunks[S] W: 3130 E: 85,84,50,530,529,0,1,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0,
+ResourceKey[minecraft:dimension / ae2:spatial_storage]: players: 0, entities: 0,0,0,0,0,0,0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: Chunks[S] W: 0 E: 0,0,0,0,0,0,0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Linux (aarch64) version 6.5.0-1027-oracle
+	Java Version: 17.0.12, Ubuntu
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Ubuntu
+	Memory: 10196879360 bytes (9724 MiB) / 17179869184 bytes (16384 MiB) up to 17179869184 bytes (16384 MiB)
+	CPUs: 4
+	Processor Vendor: aarch64
+	Processor Name: 
+	Identifier: aarch64 Family 8 Model 0xd0c Stepping r0x3p1
+	Microarchitecture: unknown
+	Frequency (GHz): 2.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: Virtio GPU
+	Graphics card #0 vendor: Red Hat, Inc.
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: version: 01
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): -0.00
+	Memory slot #0 type: RAM
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): -0.00
+	Memory slot #1 type: RAM
+	Virtual memory max (MB): 16015.61
+	Virtual memory used (MB): 15160.56
+	Swap memory total (MB): 0.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 2 total; -Xms16G -Xmx16G
+	Server Running: true
+	Player Count: 0 / 20; []
+	Data Packs: vanilla, mod:c2me_fixes_worldgen_threading_issues, mod:adaptive_performance_tweaks_core (incompatible), mod:createdeco (incompatible), mod:cccbridge (incompatible), mod:c2me_rewrites_chunk_serializer, mod:fabric_rendering_fluids_v1, mod:fabric_models_v0, mod:create_jetpack (incompatible), mod:c2me_fixes_general_threading_issues, mod:fabric_convention_tags_v1, mod:fabric_command_api_v1, mod:fabric_block_view_api_v2, mod:fabric_command_api_v2, mod:createdieselgenerators (incompatible), mod:balm, mod:snowrealmagic (incompatible), mod:fabric_screen_api_v1, mod:c2me_base, mod:spelunkery (incompatible), mod:cloth_config (incompatible), mod:biome_replacer, mod:embeddium, mod:create_oxidized, mod:fabric_game_rule_api_v1, mod:do_a_barrel_roll (incompatible), mod:amplified_nether, mod:resourcefulconfig (incompatible), mod:curios (incompatible), mod:noisium, mod:fabric_entity_events_v1, mod:fabric_rendering_data_attachment_v1, mod:flightlib (incompatible), mod:sliceanddice (incompatible), mod:com_ibm_async_asyncutil, mod:fabric_client_tags_api_v1, mod:fabric_dimensions_v1, mod:kiwi (incompatible), mod:createbigcannons (incompatible), mod:adaptive_performance_tweaks_spawn, mod:c2me_threading_lighting, mod:fastload, mod:fabric_model_loading_api_v1, mod:jei, mod:fabric_screen_handler_api_v1, mod:stoneworks, mod:immersive_weathering (incompatible), mod:fabric_rendering_v1, mod:fabric_renderer_indigo, mod:naturescompass, mod:peripherals (incompatible), mod:snowundertrees, mod:starlight (incompatible), mod:memoryleakfix (incompatible), mod:fabric_particles_v1, mod:forge, mod:c2me_opts_worldgen_vanilla, mod:c2me_opts_scheduling, mod:fabric_api_base, mod:fabric_block_api_v1, mod:fabric_resource_conditions_api_v1, mod:e4mc_minecraft (incompatible), mod:domum_ornamentum, mod:kotlinforforge (incompatible), mod:flywheel, mod:xaerominimap (incompatible), mod:fabric_item_group_api_v1, mod:c2me_notickvd, mod:structurize, mod:fabric_registry_sync_v0, mod:c2me_threading_worldgen, mod:fabric_recipe_api_v1, mod:fabric_object_builder_api_v1, mod:puzzleslib, mod:create_power_loader, mod:fabric_sound_api_v1, mod:valkyrienskies (incompatible), mod:fabric_message_api_v1, mod:kuma_api (incompatible), mod:fabric_renderer_api_v1, mod:netherportalfix, mod:advancedperipherals (incompatible), mod:fabric_item_api_v1, mod:ritchiesprojectilelib (incompatible), mod:xaeroworldmap (incompatible), mod:fabric_data_attachment_api_v1, mod:mixinextras (incompatible), mod:c2me_opts_math, mod:create_dragon_lib (incompatible), mod:railways, mod:fabric_api, mod:c2me_fixes_worldgen_vanilla_bugs, mod:fabric_content_registries_v0, mod:farmersdelight, mod:netherportalspread, mod:fabric_api_lookup_api_v1, mod:c2me_fixes_chunkio_threading_issues, mod:chunky (incompatible), mod:blockui, mod:com_electronwill_night_config_toml, mod:collective, mod:org_threadly_threadly, mod:connectormod, mod:resourcefullib (incompatible), mod:architectury (incompatible), mod:computercraft, mod:kjscc, mod:fabric_loot_api_v2, mod:fabric_networking_api_v1, mod:c2me_rewrites_chunkio, mod:peripheralium (incompatible), mod:letmedespawn, mod:yeetusexperimentus (incompatible), mod:fabric_lifecycle_events_v1, mod:c2me_opts_allocs, mod:fabric_key_binding_api_v1, mod:fabric_transfer_api_v1, mod:rhino (incompatible), mod:kubejs (incompatible), mod:copycats (incompatible), mod:fabric_resource_loader_v0, mod:create_copper_and_zinc, mod:create, mod:createcasing (incompatible), mod:creategoggles (incompatible), mod:kubejs_create (incompatible), mod:crystal_clear (incompatible), mod:create_central_kitchen (incompatible), mod:vs_clockwork (incompatible), mod:com_electronwill_night_config_core, mod:c2me_threading_chunkio, mod:clumps (incompatible), mod:fabric_mining_level_api_v1, mod:c2me_opts_chunk_access, mod:fabric_transitive_access_wideners_v1, mod:moonlight (incompatible), mod:molten_metals, mod:fabric_blockrenderlayer_v1, mod:jade (incompatible), mod:ae2 (incompatible), mod:merequester (incompatible), mod:ae2wtlib (incompatible), mod:createappliedkinetics (incompatible), mod:creativecore, mod:c2me_server_utils, mod:create_interactive (incompatible), mod:turtlechargingstation (incompatible), mod:fabric_biome_api_v1, mod:c2me_opts_worldgen_general, mod:turtlematic (incompatible), mod:c3me, mod:c2me_opts_chunkio, mod:minecolonies, mod:create_pattern_schematics (incompatible), mod:ferritecore (incompatible), mod:createtrackmap (incompatible), mod:net_objecthunter_exp4j, mod:packetfixer (incompatible), mod:badoptimizations (incompatible), mod:create_enchantment_industry (incompatible), mod:fabric_data_generation_api_v1, mod:fabric_events_interaction_v0, mod:createaddition (incompatible), Immersive Weathering Generated Pack, Spelunkery Generated Pack, create_central_kitchen:farmersdelight (incompatible), createappliedkinetics:remove_ae_recipes (incompatible), fabric, file/Terralith.zip, mod:travelersbackpack, mod:gravestone
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	Sinytra Connector: 1.0.0-beta.45+1.20.1
+		SINYTRA CONNECTOR IS PRESENT!
+		Please verify issues are not caused by Connector before reporting them to mod authors. If you're unsure, file a report on Connector's issue tracker.
+		Connector's issue tracker can be found at https://github.com/Sinytra/Connector/issues.
+		Installed Fabric mods:
+		| ================================================== | ============================== | ============================== | ==================== |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f | Connectored Concurrent Chunk M | c2me_fixes_worldgen_threading_ | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-r | Connectored Concurrent Chunk M | c2me_rewrites_chunk_serializer | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f | Connectored Concurrent Chunk M | c2me_fixes_general_threading_i | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-b | Connectored Concurrent Chunk M | c2me_base                      | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$asyncu | asyncutil                      | com_ibm_async_asyncutil        | 0.1.0                |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-t | Connectored Concurrent Chunk M | c2me_threading_lighting        | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_worldgen_vanilla     | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_scheduling           | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-n | Connectored Concurrent Chunk M | c2me_notickvd                  | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-t | Connectored Concurrent Chunk M | c2me_threading_worldgen        | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_math                 | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f | Connectored Concurrent Chunk M | c2me_fixes_worldgen_vanilla_bu | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f | Connectored Concurrent Chunk M | c2me_fixes_chunkio_threading_i | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$toml-3 | toml                           | com_electronwill_night_config_ | 3.6.5                |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$thread | threadly                       | org_threadly_threadly          | 7.0                  |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-r | Connectored Concurrent Chunk M | c2me_rewrites_chunkio          | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_allocs               | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$core-3 | core                           | com_electronwill_night_config_ | 3.6.5                |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-t | Connectored Concurrent Chunk M | c2me_threading_chunkio         | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_chunk_access         | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-s | Connectored Concurrent Chunk M | c2me_server_utils              | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_worldgen_general     | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61_mapped | Connectored Concurrent Chunk M | c3me                           | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o | Connectored Concurrent Chunk M | c2me_opts_chunkio              | 0.2.0-c3me-alpha.11. |
+		| c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$exp4j- | exp4j                          | net_objecthunter_exp4j         | 0.4.8                |
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.3.7.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar mixin-transmogrifier TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar connector_loader TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		kotlinforforge@4.11.0
+		javafml@null
+		lowcodefml@null
+	Mod List: 
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f|Connectored Concurrent Chunk M|c2me_fixes_worldgen_threading_|0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		adaptive_performance_tweaks_core_1.20.1-11.1.0.jar|APTweaks: Core                |adaptive_performance_tweaks_co|11.1.0              |DONE      |Manifest: NOSIGNATURE
+		createdeco-2.0.2-1.20.1-forge.jar                 |Create Deco                   |createdeco                    |2.0.2-1.20.1-forge  |DONE      |Manifest: NOSIGNATURE
+		cccbridge-mc1.20.1-forge-1.6.3.jar                |CC:C Bridge                   |cccbridge                     |1.6.3-forge         |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-r|Connectored Concurrent Chunk M|c2me_rewrites_chunk_serializer|0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		fabric-rendering-fluids-v1-3.0.28+4ac5e37a77.jar  |Fabric Rendering Fluids (v1)  |fabric_rendering_fluids_v1    |3.0.28+4ac5e37a77   |DONE      |Manifest: NOSIGNATURE
+		fabric-models-v0-0.4.2+7c3892a477.jar             |Fabric Models (v0)            |fabric_models_v0              |0.4.2+7c3892a477    |DONE      |Manifest: NOSIGNATURE
+		create_jetpack-forge-4.2.1.jar                    |Create Jetpack                |create_jetpack                |4.2.1               |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f|Connectored Concurrent Chunk M|c2me_fixes_general_threading_i|0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		fabric-convention-tags-v1-1.5.5+fa3d1c0177.jar    |Fabric Convention Tags        |fabric_convention_tags_v1     |1.5.5+fa3d1c0177    |DONE      |Manifest: NOSIGNATURE
+		fabric-command-api-v1-1.2.34+f71b366f77.jar       |Fabric Command API (v1)       |fabric_command_api_v1         |1.2.34+f71b366f77   |DONE      |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.1+0767707077.jar     |Fabric BlockView API (v2)     |fabric_block_view_api_v2      |1.0.1+0767707077    |DONE      |Manifest: NOSIGNATURE
+		fabric-command-api-v2-2.2.13+561530ec77.jar       |Fabric Command API (v2)       |fabric_command_api_v2         |2.2.13+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		createdieselgenerators-1.20.1-1.2i.jar            |Create Diesel Generators      |createdieselgenerators        |1.20.1-1.2i         |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.20.1-7.3.9-all.jar                   |Balm                          |balm                          |7.3.9               |DONE      |Manifest: NOSIGNATURE
+		SnowRealMagic-1.20.1-forge-10.4.4.jar             |Snow! Real Magic!             |snowrealmagic                 |10.4.4              |DONE      |Manifest: NOSIGNATURE
+		fabric-screen-api-v1-2.0.8+45a670a577.jar         |Fabric Screen API (v1)        |fabric_screen_api_v1          |2.0.8+45a670a577    |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-b|Connectored Concurrent Chunk M|c2me_base                     |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		spelunkery-1.20.1-0.3.10-forge.jar                |Spelunkery                    |spelunkery                    |1.20.1-0.3.10       |DONE      |Manifest: NOSIGNATURE
+		cloth-config-11.1.118-forge.jar                   |Cloth Config v10 API          |cloth_config                  |11.1.118            |DONE      |Manifest: NOSIGNATURE
+		biome_replacer-1.2-forge.jar                      |Biome Replacer                |biome_replacer                |1.2                 |DONE      |Manifest: NOSIGNATURE
+		embeddium-0.3.30+mc1.20.1.jar                     |Embeddium                     |embeddium                     |0.3.30+mc1.20.1     |DONE      |Manifest: NOSIGNATURE
+		create_oxidized-0.1.1.jar                         |Create: Oxidized              |create_oxidized               |0.1.1               |DONE      |Manifest: NOSIGNATURE
+		fabric-game-rule-api-v1-1.0.40+683d4da877.jar     |Fabric Game Rule API (v1)     |fabric_game_rule_api_v1       |1.0.40+683d4da877   |DONE      |Manifest: NOSIGNATURE
+		do_a_barrel_roll-forge-3.5.6+1.20.1.jar           |Do a Barrel Roll              |do_a_barrel_roll              |3.5.6+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		Amplified_Nether_1.20.x_v1.2.5.jar                |Amplified Nether              |amplified_nether              |1.2.5               |DONE      |Manifest: NOSIGNATURE
+		resourcefulconfig-forge-1.20.1-2.1.2.jar          |Resourcefulconfig             |resourcefulconfig             |2.1.2               |DONE      |Manifest: NOSIGNATURE
+		curios-forge-5.9.1+1.20.1.jar                     |Curios API                    |curios                        |5.9.1+1.20.1        |DONE      |Manifest: NOSIGNATURE
+		noisium-forge-2.3.0+mc1.20-1.20.1.jar             |Noisium                       |noisium                       |2.3.0+mc1.20-1.20.1 |DONE      |Manifest: NOSIGNATURE
+		fabric-entity-events-v1-1.6.0+6274ab9d77.jar      |Fabric Entity Events (v1)     |fabric_entity_events_v1       |1.6.0+6274ab9d77    |DONE      |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.37+a6081af|Fabric Rendering Data Attachme|fabric_rendering_data_attachme|0.3.37+a6081afc77   |DONE      |Manifest: NOSIGNATURE
+		flightlib-forge-2.1.0.jar                         |Flight Lib                    |flightlib                     |2.1.0               |DONE      |Manifest: NOSIGNATURE
+		sliceanddice-forge-3.2.1.jar                      |Create Slice & Dice           |sliceanddice                  |3.2.1               |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$asyncu|asyncutil                     |com_ibm_async_asyncutil       |0.1.0               |DONE      |Manifest: NOSIGNATURE
+		fabric-client-tags-api-v1-1.1.2+5d6761b877.jar    |Fabric Client Tags            |fabric_client_tags_api_v1     |1.1.2+5d6761b877    |DONE      |Manifest: NOSIGNATURE
+		fabric-dimensions-v1-2.1.54+8005d10d77.jar        |Fabric Dimensions API (v1)    |fabric_dimensions_v1          |2.1.54+8005d10d77   |DONE      |Manifest: NOSIGNATURE
+		Kiwi-1.20.1-Forge-11.8.20.jar                     |Kiwi Library                  |kiwi                          |11.8.20+forge       |DONE      |Manifest: NOSIGNATURE
+		createbigcannons-5.5.1+mc.1.20.1-forge.jar        |Create Big Cannons            |createbigcannons              |5.5.1+mc.1.20.1-forg|DONE      |Manifest: NOSIGNATURE
+		adaptive_performance_tweaks_spawn_1.20.1-11.1.0.ja|APTweaks: Spawn               |adaptive_performance_tweaks_sp|11.1.0              |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-t|Connectored Concurrent Chunk M|c2me_threading_lighting       |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		Fastload-Reforged-mc1.20.1-3.4.0.jar              |Fastload-Reforged             |fastload                      |3.4.0               |DONE      |Manifest: NOSIGNATURE
+		fabric-model-loading-api-v1-1.0.3+6274ab9d77.jar  |Fabric Model Loading API (v1) |fabric_model_loading_api_v1   |1.0.3+6274ab9d77    |DONE      |Manifest: NOSIGNATURE
+		jei-1.20.1-forge-15.12.3.55.jar                   |Just Enough Items             |jei                           |15.12.3.55          |DONE      |Manifest: NOSIGNATURE
+		fabric-screen-handler-api-v1-1.3.30+561530ec77.jar|Fabric Screen Handler API (v1)|fabric_screen_handler_api_v1  |1.3.30+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		Stoneworks-v8.0.0-1.20.1-Forge.jar                |Stoneworks                    |stoneworks                    |8.0.0               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		immersive_weathering-1.20.1-2.0.1-forge.jar       |Immersive Weathering          |immersive_weathering          |1.20.1-2.0.1        |DONE      |Manifest: NOSIGNATURE
+		fabric-rendering-v1-3.0.8+66e9a48f77.jar          |Fabric Rendering (v1)         |fabric_rendering_v1           |3.0.8+66e9a48f77    |DONE      |Manifest: NOSIGNATURE
+		fabric-renderer-indigo-1.5.2+b5b2da4177.jar       |Fabric Renderer - Indigo      |fabric_renderer_indigo        |1.5.2+b5b2da4177    |DONE      |Manifest: NOSIGNATURE
+		travelersbackpack-forge-1.20.1-9.1.15.jar         |Traveler's Backpack           |travelersbackpack             |9.1.15              |DONE      |Manifest: NOSIGNATURE
+		NaturesCompass-1.20.1-1.11.2-forge.jar            |Nature's Compass              |naturescompass                |1.20.1-1.11.2-forge |DONE      |Manifest: NOSIGNATURE
+		MorePeripherals_1.20.1-1.13.0.jar                 |More Peripherals              |peripherals                   |1.13.0              |DONE      |Manifest: NOSIGNATURE
+		snowundertrees-1.20.1-1.4.4.jar                   |Snow Under Trees              |snowundertrees                |1.4.4               |DONE      |Manifest: NOSIGNATURE
+		starlight-1.1.2+forge.1cda73c.jar                 |Starlight                     |starlight                     |1.1.2+forge.1cda73c |DONE      |Manifest: NOSIGNATURE
+		memoryleakfix-forge-1.17+-1.1.5.jar               |Memory Leak Fix               |memoryleakfix                 |1.1.5               |DONE      |Manifest: NOSIGNATURE
+		fabric-particles-v1-1.1.2+78e1ecb877.jar          |Fabric Particles (v1)         |fabric_particles_v1           |1.1.2+78e1ecb877    |DONE      |Manifest: NOSIGNATURE
+		forge-1.20.1-47.3.7-universal.jar                 |Forge                         |forge                         |47.3.7              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_worldgen_vanilla    |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_scheduling          |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		server-1.20.1-20230612.114412-srg.jar             |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.31+ef105b4977.jar             |Fabric API Base               |fabric_api_base               |0.4.31+ef105b4977   |DONE      |Manifest: NOSIGNATURE
+		fabric-block-api-v1-1.0.11+0e6cb7f777.jar         |Fabric Block API (v1)         |fabric_block_api_v1           |1.0.11+0e6cb7f777   |DONE      |Manifest: NOSIGNATURE
+		fabric-resource-conditions-api-v1-2.3.8+9ad825cd77|Fabric Resource Conditions API|fabric_resource_conditions_api|2.3.8+9ad825cd77    |DONE      |Manifest: NOSIGNATURE
+		e4mc_minecraft-5.1.0.jar                          |e4mc                          |e4mc_minecraft                |5.1.0               |DONE      |Manifest: NOSIGNATURE
+		domum_ornamentum-1.20.1-1.0.199-BETA-universal.jar|Domum Ornamentum              |domum_ornamentum              |1.20.1-1.0.199-BETA |DONE      |Manifest: NOSIGNATURE
+		kffmod-4.11.0.jar                                 |Kotlin For Forge              |kotlinforforge                |4.11.0              |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.20.1-0.6.10-7.jar                |Flywheel                      |flywheel                      |0.6.10-7            |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_24.3.0_Forge_1.20.jar              |Xaero's Minimap               |xaerominimap                  |24.3.0              |DONE      |Manifest: NOSIGNATURE
+		gravestone-forge-1.20.1-1.0.21.jar                |Gravestone Mod                |gravestone                    |1.20.1-1.0.21       |DONE      |Manifest: NOSIGNATURE
+		fabric-item-group-api-v1-4.0.12+c9161c2d77.jar    |Fabric Item Group API (v1)    |fabric_item_group_api_v1      |4.0.12+c9161c2d77   |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-n|Connectored Concurrent Chunk M|c2me_notickvd                 |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		structurize-1.20.1-1.0.752-beta.jar               |Structurize                   |structurize                   |1.20.1-1.0.752-beta |DONE      |Manifest: NOSIGNATURE
+		fabric-registry-sync-v0-2.3.3+1c0ea72177.jar      |Fabric Registry Sync (v0)     |fabric_registry_sync_v0       |2.3.3+1c0ea72177    |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-t|Connectored Concurrent Chunk M|c2me_threading_worldgen       |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		fabric-recipe-api-v1-1.0.21+514a076577.jar        |Fabric Recipe API (v1)        |fabric_recipe_api_v1          |1.0.21+514a076577   |DONE      |Manifest: NOSIGNATURE
+		fabric-object-builder-api-v1-11.1.3+2174fc8477.jar|Fabric Object Builder API (v1)|fabric_object_builder_api_v1  |11.1.3+2174fc8477   |DONE      |Manifest: NOSIGNATURE
+		PuzzlesLib-v8.0.15-1.20.1-Forge.jar               |Puzzles Lib                   |puzzleslib                    |8.0.15              |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		create_power_loader-1.5.0-mc1.20.1.jar            |Create: Power Loader          |create_power_loader           |1.5.0-mc1.20.1      |DONE      |Manifest: NOSIGNATURE
+		fabric-sound-api-v1-1.0.13+4f23bd8477.jar         |Fabric Sound API (v1)         |fabric_sound_api_v1           |1.0.13+4f23bd8477   |DONE      |Manifest: NOSIGNATURE
+		valkyrienskies-120-2.3.0-beta.5.jar               |Valkyrien Skies 2             |valkyrienskies                |2.3.0-beta.5        |DONE      |Manifest: NOSIGNATURE
+		fabric-message-api-v1-5.1.9+52cc178c77.jar        |Fabric Message API (v1)       |fabric_message_api_v1         |5.1.9+52cc178c77    |DONE      |Manifest: NOSIGNATURE
+		kuma-api-forge-20.1.8+1.20.1.jar                  |KumaAPI                       |kuma_api                      |20.1.8              |DONE      |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.2.1+1d29b44577.jar       |Fabric Renderer API (v1)      |fabric_renderer_api_v1        |3.2.1+1d29b44577    |DONE      |Manifest: NOSIGNATURE
+		netherportalfix-forge-1.20-13.0.1.jar             |NetherPortalFix               |netherportalfix               |13.0.1              |DONE      |Manifest: NOSIGNATURE
+		AdvancedPeripherals-1.20.1-0.7.40r.jar            |Advanced Peripherals          |advancedperipherals           |0.7.40r             |DONE      |Manifest: NOSIGNATURE
+		fabric-item-api-v1-2.1.28+4d0bbcfa77.jar          |Fabric Item API (v1)          |fabric_item_api_v1            |2.1.28+4d0bbcfa77   |DONE      |Manifest: NOSIGNATURE
+		ritchiesprojectilelib-2.0.0-dev+mc.1.20.1-forge-bu|Ritchie's Projectile Library  |ritchiesprojectilelib         |2.0.0-dev+mc.1.20.1-|DONE      |Manifest: NOSIGNATURE
+		XaerosWorldMap_1.38.8_Forge_1.20.jar              |Xaero's World Map             |xaeroworldmap                 |1.38.8              |DONE      |Manifest: NOSIGNATURE
+		fabric-data-attachment-api-v1-1.0.0+30ef839e77.jar|Fabric Data Attachment API (v1|fabric_data_attachment_api_v1 |1.0.0+30ef839e77    |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.3.6.jar                       |MixinExtras                   |mixinextras                   |0.3.6               |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_math                |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		create_dragon_lib-1.20.1-1.4.3.jar                |Create: Dragon Lib            |create_dragon_lib             |1.4.3               |DONE      |Manifest: NOSIGNATURE
+		Steam_Rails-1.6.4+forge-mc1.20.1.jar              |Create: Steam 'n' Rails       |railways                      |1.6.4+forge-mc1.20.1|DONE      |Manifest: NOSIGNATURE
+		fabric-api-0.92.2+1.11.8+1.20.1.jar               |Forgified Fabric API          |fabric_api                    |0.92.2+1.11.8+1.20.1|DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f|Connectored Concurrent Chunk M|c2me_fixes_worldgen_vanilla_bu|0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		fabric-content-registries-v0-4.0.11+a670df1e77.jar|Fabric Content Registries (v0)|fabric_content_registries_v0  |4.0.11+a670df1e77   |DONE      |Manifest: NOSIGNATURE
+		FarmersDelight-1.20.1-1.2.4.jar                   |Farmer's Delight              |farmersdelight                |1.20.1-1.2.4        |DONE      |Manifest: NOSIGNATURE
+		netherportalspread-1.20.1-8.3.jar                 |Nether Portal Spread          |netherportalspread            |8.3                 |DONE      |Manifest: NOSIGNATURE
+		fabric-api-lookup-api-v1-1.6.36+67f9824077.jar    |Fabric API Lookup API (v1)    |fabric_api_lookup_api_v1      |1.6.36+67f9824077   |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-f|Connectored Concurrent Chunk M|c2me_fixes_chunkio_threading_i|0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		Chunky-1.3.146.jar                                |Chunky                        |chunky                        |1.3.146             |DONE      |Manifest: NOSIGNATURE
+		blockui-1.20.1-1.0.186-beta.jar                   |UI Library Mod                |blockui                       |1.20.1-1.0.186-beta |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$toml-3|toml                          |com_electronwill_night_config_|3.6.5               |DONE      |Manifest: NOSIGNATURE
+		collective-1.20.1-7.84.jar                        |Collective                    |collective                    |7.84                |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$thread|threadly                      |org_threadly_threadly         |7.0                 |DONE      |Manifest: NOSIGNATURE
+		Connector-1.0.0-beta.45+1.20.1-mod.jar            |Connector                     |connectormod                  |1.0.0-beta.45+1.20.1|DONE      |Manifest: NOSIGNATURE
+		resourcefullib-forge-1.20.1-2.1.28.jar            |Resourceful Lib               |resourcefullib                |2.1.28              |DONE      |Manifest: NOSIGNATURE
+		architectury-9.2.14-forge.jar                     |Architectury                  |architectury                  |9.2.14              |DONE      |Manifest: NOSIGNATURE
+		cc-tweaked-1.20.1-forge-1.113.0.jar               |CC: Tweaked                   |computercraft                 |1.113.0             |DONE      |Manifest: NOSIGNATURE
+		kjscc-1.0.1-beta.jar                              |KubeJS + CC: Tweaked          |kjscc                         |1.0.1-beta          |DONE      |Manifest: NOSIGNATURE
+		fabric-loot-api-v2-1.2.1+eb28f93e77.jar           |Fabric Loot API (v2)          |fabric_loot_api_v2            |1.2.1+eb28f93e77    |DONE      |Manifest: NOSIGNATURE
+		fabric-networking-api-v1-1.3.11+503a202477.jar    |Fabric Networking API (v1)    |fabric_networking_api_v1      |1.3.11+503a202477   |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-r|Connectored Concurrent Chunk M|c2me_rewrites_chunkio         |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		peripheralium-forge-1.20.1-0.7.0.jar              |Peripheralium                 |peripheralium                 |0.7.0               |DONE      |Manifest: NOSIGNATURE
+		letmedespawn-forge-1.20.1-1.20.4-1.2.1.jar        |Let Me Despawn                |letmedespawn                  |1.2.1               |DONE      |Manifest: NOSIGNATURE
+		YeetusExperimentus-Forge-2.3.0-build.4+mc1.20.1.ja|Yeetus Experimentus           |yeetusexperimentus            |2.3.0-build.4+mc1.20|DONE      |Manifest: NOSIGNATURE
+		fabric-lifecycle-events-v1-2.2.22+afab492177.jar  |Fabric Lifecycle Events (v1)  |fabric_lifecycle_events_v1    |2.2.22+afab492177   |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_allocs              |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		fabric-key-binding-api-v1-1.0.37+561530ec77.jar   |Fabric Key Binding API (v1)   |fabric_key_binding_api_v1     |1.0.37+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		fabric-transfer-api-v1-3.3.5+631c9cd677.jar       |Fabric Transfer API (v1)      |fabric_transfer_api_v1        |3.3.5+631c9cd677    |DONE      |Manifest: NOSIGNATURE
+		rhino-forge-2001.2.3-build.6.jar                  |Rhino                         |rhino                         |2001.2.3-build.6    |DONE      |Manifest: NOSIGNATURE
+		kubejs-forge-2001.6.5-build.14.jar                |KubeJS                        |kubejs                        |2001.6.5-build.14   |DONE      |Manifest: NOSIGNATURE
+		copycats-2.1.2+mc.1.20.1-forge.jar                |Create: Copycats+             |copycats                      |2.1.2+mc.1.20.1-forg|DONE      |Manifest: NOSIGNATURE
+		fabric-resource-loader-v0-0.11.10+bcd08ed377.jar  |Fabric Resource Loader (v0)   |fabric_resource_loader_v0     |0.11.10+bcd08ed377  |DONE      |Manifest: NOSIGNATURE
+		create_copper_and_zinc-1.4.0-forge-1.20.1.jar     |Create: Copper & Zinc         |create_copper_and_zinc        |1.4.0               |DONE      |Manifest: NOSIGNATURE
+		create-1.20.1-0.5.1.f.jar                         |Create                        |create                        |0.5.1.f             |DONE      |Manifest: NOSIGNATURE
+		CreateCasing-1.20.1-1.6.1-fix1.jar                |Create : Encased              |createcasing                  |1.20.1-1.6.1-fix1   |DONE      |Manifest: NOSIGNATURE
+		creategoggles-1.20.1-0.5.5.g-[FORGE].jar          |Create Goggles                |creategoggles                 |0.5.5.g             |DONE      |Manifest: NOSIGNATURE
+		kubejs-create-forge-2001.2.5-build.2.jar          |KubeJS Create                 |kubejs_create                 |2001.2.5-build.2    |DONE      |Manifest: NOSIGNATURE
+		Crystal-Clear-2.1-Beta-forge.jar                  |Create: Crystal Clear         |crystal_clear                 |2.1-Beta            |DONE      |Manifest: NOSIGNATURE
+		create_central_kitchen-1.20.1-for-create-0.5.1.f-1|Create: Central Kitchen       |create_central_kitchen        |1.3.12              |DONE      |Manifest: NOSIGNATURE
+		clockwork-1.20.1-0.1.16-forge-b3b22e39fe.jar      |Clockwork: Create x Valkyrien |vs_clockwork                  |1.20.1-0.1.16-forge-|DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$core-3|core                          |com_electronwill_night_config_|3.6.5               |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-t|Connectored Concurrent Chunk M|c2me_threading_chunkio        |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		Clumps-forge-1.20.1-12.0.0.4.jar                  |Clumps                        |clumps                        |12.0.0.4            |DONE      |Manifest: NOSIGNATURE
+		fabric-mining-level-api-v1-2.1.50+561530ec77.jar  |Fabric Mining Level API (v1)  |fabric_mining_level_api_v1    |2.1.50+561530ec77   |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_chunk_access        |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		fabric-transitive-access-wideners-v1-4.3.1+1880499|Fabric Transitive Access Widen|fabric_transitive_access_widen|4.3.1+1880499877    |DONE      |Manifest: NOSIGNATURE
+		moonlight-1.20-2.12.16-forge.jar                  |Moonlight Library             |moonlight                     |1.20-2.12.16        |DONE      |Manifest: NOSIGNATURE
+		molten_metals-1.20.1-0.1.4-forge.jar              |Molten Metals                 |molten_metals                 |1.20.1-0.1.4        |DONE      |Manifest: NOSIGNATURE
+		fabric-blockrenderlayer-v1-1.1.41+1d0da21e77.jar  |Fabric BlockRenderLayer Regist|fabric_blockrenderlayer_v1    |1.1.41+1d0da21e77   |DONE      |Manifest: NOSIGNATURE
+		Jade-1.20.1-forge-11.10.1.jar                     |Jade                          |jade                          |11.10.1+forge       |DONE      |Manifest: NOSIGNATURE
+		appliedenergistics2-forge-15.2.13.jar             |Applied Energistics 2         |ae2                           |15.2.13             |DONE      |Manifest: NOSIGNATURE
+		merequester-forge-1.20.1-1.1.4.jar                |ME Requester                  |merequester                   |1.20.1-1.1.4        |DONE      |Manifest: NOSIGNATURE
+		ae2wtlib-15.2.3-forge.jar                         |AE2WTLib                      |ae2wtlib                      |15.2.3-forge        |DONE      |Manifest: NOSIGNATURE
+		createappliedkinetics-1.3.2-1.20.1.jar            |Create Applied Kinetics       |createappliedkinetics         |1.3.2-1.20.1        |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_FORGE_v2.11.37_mc1.20.1.jar          |CreativeCore                  |creativecore                  |2.11.37             |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-s|Connectored Concurrent Chunk M|c2me_server_utils             |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		create_interactive-1201-forge-1.0.2-beta.2.jar    |Create: Interactive           |create_interactive            |1.0.2-beta.2        |DONE      |Manifest: NOSIGNATURE
+		turtlechargingstation-1.4.2-1.20.jar              |Turtle Charging Station       |turtlechargingstation         |1.4.2-1.20          |DONE      |Manifest: NOSIGNATURE
+		fabric-biome-api-v1-13.0.13+dc36698e77.jar        |Fabric Biome API (v1)         |fabric_biome_api_v1           |13.0.13+dc36698e77  |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_worldgen_general    |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		turtlematic-forge-1.20.1-1.3.1.jar                |Turtlematic                   |turtlematic                   |1.3.1               |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61_mapped|Connectored Concurrent Chunk M|c3me                          |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$c2me-o|Connectored Concurrent Chunk M|c2me_opts_chunkio             |0.2.0-c3me-alpha.11.|DONE      |Manifest: NOSIGNATURE
+		minecolonies-1.20.1-1.1.644-beta.jar              |MineColonies                  |minecolonies                  |1.20.1-1.1.644-beta |DONE      |Manifest: NOSIGNATURE
+		pattern_schematics-1.1.10+forge-1.20.1.jar        |Create: Pattern Schematics    |create_pattern_schematics     |1.1.10+forge-1.20.1 |DONE      |Manifest: NOSIGNATURE
+		ferritecore-6.0.1-forge.jar                       |Ferrite Core                  |ferritecore                   |6.0.1               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		create-track-map-1.4+mc1.20.1-neoforge.jar        |Create Track Map              |createtrackmap                |1.4                 |DONE      |Manifest: NOSIGNATURE
+		c3me-fabric-mc1.20.1-0.2.0-c3me-alpha.11.61$exp4j-|exp4j                         |net_objecthunter_exp4j        |0.4.8               |DONE      |Manifest: NOSIGNATURE
+		packetfixer-forge-1.4.2-1.19-to-1.20.1.jar        |Packet Fixer                  |packetfixer                   |1.4.2               |DONE      |Manifest: NOSIGNATURE
+		BadOptimizations-2.1.4-1.20.1.jar                 |BadOptimizations              |badoptimizations              |2.1.4               |DONE      |Manifest: NOSIGNATURE
+		create_enchantment_industry-1.20.1-for-create-0.5.|Create Enchantment Industry   |create_enchantment_industry   |1.2.9.d             |DONE      |Manifest: NOSIGNATURE
+		fabric-data-generation-api-v1-12.3.4+369cb3a477.ja|Fabric Data Generation API (v1|fabric_data_generation_api_v1 |12.3.4+369cb3a477   |DONE      |Manifest: NOSIGNATURE
+		fabric-events-interaction-v0-0.6.2+0d0bd5a777.jar |Fabric Events Interaction (v0)|fabric_events_interaction_v0  |0.6.2+0d0bd5a777    |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.20.1-1.2.4d.jar                  |Create Crafts & Additions     |createaddition                |1.20.1-1.2.4d       |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 2f8ba7f3-1e21-4321-8e62-bdf73036f393
+	FML: 47.3
+	Forge: net.minecraftforge:47.3.7
+	Kiwi Modules: 
+		kiwi:block_components
+		kiwi:block_templates
+		kiwi:contributors
+		kiwi:data
+		kiwi:item_templates
+		snowrealmagic:core
