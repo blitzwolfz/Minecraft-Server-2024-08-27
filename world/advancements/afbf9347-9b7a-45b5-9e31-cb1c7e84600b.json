@@ -11,6 +11,7 @@
       "minecraft:taiga": "2024-08-28 04:10:34 +0000",
       "minecraft:cherry_grove": "2024-08-28 03:11:31 +0000",
       "minecraft:sunflower_plains": "2024-08-28 03:09:07 +0000",
+      "minecraft:birch_forest": "2024-08-29 01:29:34 +0000",
       "minecraft:savanna_plateau": "2024-08-28 02:36:49 +0000",
       "minecraft:beach": "2024-08-28 03:10:08 +0000",
       "minecraft:stony_peaks": "2024-08-28 02:37:58 +0000",
@@ -18,6 +19,7 @@
       "minecraft:river": "2024-08-28 02:12:12 +0000",
       "minecraft:dripstone_caves": "2024-08-28 03:33:55 +0000",
       "minecraft:swamp": "2024-08-28 04:00:28 +0000",
+      "minecraft:cold_ocean": "2024-08-29 01:30:35 +0000",
       "minecraft:forest": "2024-08-28 02:04:24 +0000",
       "minecraft:windswept_forest": "2024-08-28 04:21:41 +0000",
       "minecraft:ocean": "2024-08-28 03:13:26 +0000",
@@ -649,10 +651,12 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:pillager": "2024-08-29 01:32:11 +0000",
       "minecraft:skeleton": "2024-08-28 03:38:15 +0000",
       "minecraft:spider": "2024-08-28 03:48:34 +0000",
       "minecraft:slime": "2024-08-28 03:39:49 +0000",
-      "minecraft:zombie": "2024-08-28 02:11:18 +0000"
+      "minecraft:zombie": "2024-08-28 02:11:18 +0000",
+      "minecraft:drowned": "2024-08-29 01:41:56 +0000"
     },
     "done": false
   },
@@ -1253,6 +1257,7 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_porkchop": "2024-08-28 03:24:41 +0000",
+      "cooked_mutton": "2024-08-29 02:27:48 +0000",
       "cooked_beef": "2024-08-28 03:16:53 +0000",
       "apple": "2024-08-28 04:17:26 +0000",
       "bread": "2024-08-28 03:31:52 +0000",
@@ -1893,7 +1898,8 @@
   },
   "immersive_weathering:immersive_weathering/dirts": {
     "criteria": {
-      "sandy_dirt": "2024-08-28 03:01:48 +0000"
+      "sandy_dirt": "2024-08-28 03:01:48 +0000",
+      "dirt": "2024-08-29 02:20:52 +0000"
     },
     "done": false
   },
@@ -2829,6 +2835,480 @@
   "minecraft:recipes/misc/red_dye_from_poppy": {
     "criteria": {
       "has_poppy": "2024-08-28 04:15:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/deflect_arrow": {
+    "criteria": {
+      "deflected_projectile": "2024-08-29 01:32:17 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/shoot_arrow": {
+    "criteria": {
+      "shot_arrow": "2024-08-29 01:32:40 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/crafting_upgrade": {
+    "criteria": {
+      "has_crafting_table": "2024-08-29 01:19:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_shingle_wall_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/iron": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-29 01:19:58 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_tile_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/questlog": {
+    "criteria": {
+      "has_build_tool": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:minecolonies/fulfill_request": {
+    "criteria": {
+      "click_gui_button_fulfill": "2024-08-29 02:16:48 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/build_goggles": {
+    "criteria": {
+      "has_build_tool": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/coal": {
+    "criteria": {
+      "has_coal": "2024-08-29 01:19:58 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutstonesmeltery": {
+    "criteria": {
+      "has_items": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "domum_ornamentum:recipes/tools/white_paper_extra": {
+    "criteria": {
+      "has_material": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockwaypoint": {
+    "criteria": {
+      "has_build_tool": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "immersive_weathering:recipes/stone_bricks": {
+    "criteria": {
+      "has_copper_block": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_paver_wall_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/schematics/empty_schematic": {
+    "criteria": {
+      "has_item": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2024-08-29 02:33:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stonecutter": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/clipboard": {
+    "criteria": {
+      "has_build_tool": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_pillar_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "domum_ornamentum:recipes/tools/paper_extra": {
+    "criteria": {
+      "has_material": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_plate_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_plate_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_plate_wall_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_pavers_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/backpack_tank": {
+    "criteria": {
+      "has_iron": "2024-08-29 01:19:58 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutstonemason": {
+    "criteria": {
+      "has_items": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_tile_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_paver_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutdeliverymaniron": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:minecolonies/start_builder": {
+    "criteria": {
+      "builder_request": "2024-08-29 02:15:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/ol_betsy": {
+    "criteria": {
+      "shot_crossbow": "2024-08-29 01:32:40 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutblacksmith": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_tile_wall_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_paver_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutcrusher": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutshepherd": {
+    "criteria": {
+      "has_items": "2024-08-29 02:16:29 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhuttownhall": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/resourcescroll": {
+    "criteria": {
+      "has_build_tool": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockminecoloniesrack": {
+    "criteria": {
+      "has_build_tool": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:minecolonies/check_out_guide": {
+    "criteria": {
+      "click_gui_button_close": "2024-08-29 02:15:05 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_plates_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_shingle_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_paper": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_stone_bricks": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_shingles_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks": {
+    "criteria": {
+      "has_tag": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/schematics/schematic_and_quill": {
+    "criteria": {
+      "has_item": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutsmeltery": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2024-08-29 02:32:06 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/materials/sand_paper": {
+    "criteria": {
+      "has_item": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/barrel_block": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/materials/red_sand_paper": {
+    "criteria": {
+      "has_item": "2024-08-29 01:45:40 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/iron_tier_upgrade": {
+    "criteria": {
+      "has_iron_ingot": "2024-08-29 01:19:58 +0000"
+    },
+    "done": true
+  },
+  "travelersbackpack:recipes/misc/hose_nozzle": {
+    "criteria": {
+      "has_iron": "2024-08-29 01:19:58 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_shingle_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/cracked_stone_tiles_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "stoneworks:recipes/building_blocks/stone_tiles_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2024-08-29 02:31:26 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:recipes/misc/blockhutcitizen": {
+    "criteria": {
+      "has_items": "2024-08-29 01:45:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cartography_table": {
+    "criteria": {
+      "has_paper": "2024-08-29 01:45:40 +0000"
     },
     "done": true
   },
