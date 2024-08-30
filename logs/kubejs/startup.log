@@ -1,9 +1,9 @@
-[22:32:49] [INIT] KubeJS 2001.6.5-build.14; MC 2001 forge
-[22:32:49] [INIT] Loaded plugins:
-[22:32:49] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
-[22:32:49] [INIT] - fr.iglee42.createcasing.compat.kubejs.KubeJSCompatPlugin
-[22:32:49] [INIT] - com.wolfieboy09.kjscc.ComputerCraftPlugin
-[22:32:49] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
-[22:32:50] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
-[22:32:50] [INFO] Loaded script startup_scripts:example.js in 0.188 s
-[22:32:50] [INFO] Loaded 1/1 KubeJS startup scripts in 0.975 s with 0 errors and 0 warnings
+[04:32:23] [INIT] KubeJS 2001.6.5-build.14; MC 2001 forge
+[04:32:23] [INIT] Loaded plugins:
+[04:32:23] [INIT] - dev.latvian.mods.kubejs.forge.BuiltinKubeJSForgePlugin
+[04:32:23] [INIT] - fr.iglee42.createcasing.compat.kubejs.KubeJSCompatPlugin
+[04:32:23] [INIT] - com.wolfieboy09.kjscc.ComputerCraftPlugin
+[04:32:23] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[04:32:24] [INFO] example.js#5: Hello, World! (Loaded startup scripts)
+[04:32:24] [INFO] Loaded script startup_scripts:example.js in 0.174 s
+[04:32:24] [INFO] Loaded 1/1 KubeJS startup scripts in 1.088 s with 0 errors and 0 warnings
