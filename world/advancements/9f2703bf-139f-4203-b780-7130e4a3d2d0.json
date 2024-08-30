@@ -326,6 +326,7 @@
       "minecraft:skeleton": "2024-08-28 02:08:16 +0000",
       "minecraft:spider": "2024-08-28 02:14:44 +0000",
       "minecraft:creeper": "2024-08-29 23:08:43 +0000",
+      "minecraft:slime": "2024-08-30 14:54:40 +0000",
       "minecraft:witch": "2024-08-30 02:16:21 +0000",
       "minecraft:zombie": "2024-08-28 02:08:02 +0000",
       "minecraft:drowned": "2024-08-28 00:18:42 +0000",
@@ -5150,6 +5151,7 @@
   },
   "farmersdelight:main/plant_all_crops": {
     "criteria": {
+      "kelp": "2024-08-30 16:23:34 +0000",
       "sugar_cane": "2024-08-30 08:52:59 +0000",
       "potato": "2024-08-30 02:50:41 +0000",
       "carrot": "2024-08-30 07:56:21 +0000"
@@ -5188,7 +5190,10 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
-      "minecraft:nether_wastes": "2024-08-30 03:47:49 +0000"
+      "minecraft:crimson_forest": "2024-08-30 16:00:37 +0000",
+      "minecraft:nether_wastes": "2024-08-30 03:47:49 +0000",
+      "minecraft:basalt_deltas": "2024-08-30 16:00:49 +0000",
+      "minecraft:warped_forest": "2024-08-30 16:17:00 +0000"
     },
     "done": false
   },
@@ -5252,15 +5257,27 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
+  "minecolonies:production/build_delivery_person": {
     "criteria": {
-      "has_rabbit": "2024-08-30 07:15:38 +0000"
+      "delivery_person": "2024-08-30 06:33:12 +0000"
+    },
+    "done": true
+  },
+  "minecolonies:minecolonies/build_citizen": {
+    "criteria": {
+      "citizens_hut": "2024-08-30 06:44:56 +0000"
     },
     "done": true
   },
   "immersive_weathering:immersive_weathering/flower_crown": {
     "criteria": {
       "wheat": "2024-08-30 06:46:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
+    "criteria": {
+      "has_rabbit": "2024-08-30 07:15:38 +0000"
     },
     "done": true
   },
@@ -5276,18 +5293,6 @@
     },
     "done": true
   },
-  "minecolonies:minecolonies/build_citizen": {
-    "criteria": {
-      "citizens_hut": "2024-08-30 06:44:56 +0000"
-    },
-    "done": true
-  },
-  "minecolonies:production/build_delivery_person": {
-    "criteria": {
-      "delivery_person": "2024-08-30 06:33:12 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/cooked_rabbit_from_smoking": {
     "criteria": {
       "has_rabbit": "2024-08-30 07:15:38 +0000"
@@ -5297,6 +5302,306 @@
   "minecolonies:production/build_miner": {
     "criteria": {
       "miner": "2024-08-30 08:07:32 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2024-08-30 14:54:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2024-08-30 14:54:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2024-08-30 14:54:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
+    "criteria": {
+      "has_amethyst_shard": "2024-08-30 15:07:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2024-08-30 15:07:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2024-08-30 15:07:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2024-08-30 15:07:19 +0000"
+    },
+    "done": true
+  },
+  "spelunkery:recipes/amethyst": {
+    "criteria": {
+      "has_item": "2024-08-30 15:07:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye_from_cornflower": {
+    "criteria": {
+      "has_cornflower": "2024-08-30 15:55:12 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/schematics/schematic_table": {
+    "criteria": {
+      "has_item": "2024-08-30 15:57:08 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/schematics/schematicannon": {
+    "criteria": {
+      "has_item": "2024-08-30 15:57:08 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/appliances/clipboard_clear": {
+    "criteria": {
+      "has_item": "2024-08-30 15:59:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2024-08-30 16:01:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/powered_rail": {
+    "criteria": {
+      "has_rail": "2024-08-30 16:01:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/detector_rail": {
+    "criteria": {
+      "has_rail": "2024-08-30 16:01:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/activator_rail": {
+    "criteria": {
+      "has_rail": "2024-08-30 16:01:27 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/transportation/benchcart": {
+    "criteria": {
+      "hasitem": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/hopper_minecart": {
+    "criteria": {
+      "has_minecart": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/rail": {
+    "criteria": {
+      "has_minecart": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/chest_minecart": {
+    "criteria": {
+      "has_minecart": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "spelunkery:recipes/minecart": {
+    "criteria": {
+      "has_item": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/transportation/jukeboxcart": {
+    "criteria": {
+      "hasitem": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/tnt_minecart": {
+    "criteria": {
+      "has_minecart": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/furnace_minecart": {
+    "criteria": {
+      "has_minecart": "2024-08-30 16:01:46 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/furnace_minecart_from_contraption_cart": {
+    "criteria": {
+      "has_item": "2024-08-30 16:03:25 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/minecart_from_contraption_cart": {
+    "criteria": {
+      "has_item": "2024-08-30 16:03:25 +0000"
+    },
+    "done": true
+  },
+  "createbigcannons:recipes/misc/quickfiring_mechanism": {
+    "criteria": {
+      "has_lever": "2024-08-30 16:03:30 +0000"
+    },
+    "done": true
+  },
+  "createbigcannons:recipes/misc/cannon_welder_mirrored": {
+    "criteria": {
+      "has_blaze_burner": "2024-08-30 16:19:21 +0000"
+    },
+    "done": true
+  },
+  "create:burner": {
+    "criteria": {
+      "0": "2024-08-30 16:19:21 +0000"
+    },
+    "done": true
+  },
+  "createbigcannons:recipes/misc/cannon_welder": {
+    "criteria": {
+      "has_blaze_burner": "2024-08-30 16:19:21 +0000"
+    },
+    "done": true
+  },
+  "createbigcannons:recipes/misc/basin_foundry_lid": {
+    "criteria": {
+      "has_basin": "2024-08-30 16:19:36 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/dried_kelp_from_smelting": {
+    "criteria": {
+      "has_kelp": "2024-08-30 16:23:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/dried_kelp_from_campfire_cooking": {
+    "criteria": {
+      "has_kelp": "2024-08-30 16:23:28 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/dried_kelp_from_smoking": {
+    "criteria": {
+      "has_kelp": "2024-08-30 16:23:28 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/vertical_gearboxfrom_conversion": {
+    "criteria": {
+      "has_item": "2024-08-30 16:24:52 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/nozzle": {
+    "criteria": {
+      "has_item": "2024-08-30 16:25:08 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/gearbox": {
+    "criteria": {
+      "has_item": "2024-08-30 16:26:18 +0000"
+    },
+    "done": true
+  },
+  "copycats:recipes/misc/crafting/copycat_cogwheel": {
+    "criteria": {
+      "has_item": "2024-08-30 16:26:18 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/smart_chute": {
+    "criteria": {
+      "has_item": "2024-08-30 16:26:48 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_coalburner": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_diesel": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_woodburner": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_oilburner": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_long": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_streamlined": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "railways:recipes/misc/crafting/smokestack_caboosestyle": {
+    "criteria": {
+      "has_item": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/stove": {
+    "criteria": {
+      "has_campfire": "2024-08-30 16:27:32 +0000"
+    },
+    "done": true
+  },
+  "spelunkery:recipes/rock_salt_block": {
+    "criteria": {
+      "has_item": "2024-08-30 16:28:53 +0000"
+    },
+    "done": true
+  },
+  "create:recipes/misc/crafting/kinetics/large_water_wheel": {
+    "criteria": {
+      "has_item": "2024-08-30 16:36:52 +0000"
+    },
+    "done": true
+  },
+  "create:water_wheel": {
+    "criteria": {
+      "0": "2024-08-30 16:37:53 +0000"
     },
     "done": true
   },
